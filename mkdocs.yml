@@ -1,0 +1,22 @@
+site_name: Infra Docs
+nav:
+  - 'en':
+    - 'Home': 'en/index.md'
+    - 'AWS': 'en/aws.md'
+    - 'Tailscale': 'en/tailscale.md'
+  - 'ru':
+    - 'Home': 'ru/index.md'
+    - 'AWS': 'ru/aws.md'
+    - 'Tailscale': 'ru/tailscale.md'
+  - 'pl':
+    - 'Home': 'pl/index.md'
+    - 'AWS': 'pl/aws.md'
+    - 'Tailscale': 'pl/tailscale.md'
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        ru: Русский
+        pl: Polski

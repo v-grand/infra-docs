@@ -1,0 +1,10 @@
+{
+	"name": "Infra Docs",
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"features": {
+		"ghcr.io/devcontainers/features/terraform:1": {},
+		"ghcr.io/devcontainers/features/jupyterlab:1": {}
+	},
+	"forwardPorts": [8888, 8000],
+	"postCreateCommand": "pip install mkdocs"
+}
