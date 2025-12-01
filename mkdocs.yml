@@ -1,4 +1,12 @@
 site_name: Infra Docs
+repo_url: https://github.com/v-grand/infra-docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  language: en
+
 nav:
   - 'en':
     - 'Home': 'en/index.md'
@@ -12,6 +20,7 @@ nav:
     - 'Home': 'pl/index.md'
     - 'AWS': 'pl/aws.md'
     - 'Tailscale': 'pl/tailscale.md'
+
 plugins:
   - search
   - i18n:
