@@ -6,6 +6,12 @@ theme:
   features:
     - navigation.tabs
   language: en
+  logo: assets/images/logo.svg
+  favicon: assets/images/logo.svg
+  palette:
+    scheme: default
+  icon:
+    repo: fontawesome/brands/github
 
 nav:
   - 'en':
