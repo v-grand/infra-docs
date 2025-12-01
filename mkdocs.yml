@@ -17,14 +17,28 @@ nav:
   - 'en':
     - 'Home': 'en/index.md'
     - 'AWS': 'en/aws.md'
+    - 'GCP': 
+      - 'Home': 'en/gcp/index.md'
+      - 'VM': 'en/gcp/vm.md'
+      - 'DB': 'en/gcp/db.md'
+      - 'K8s': 'en/gcp/k8s.md'
     - 'Tailscale': 'en/tailscale.md'
+    - 'Notebooks':
+      - 'Example': 'notebooks/example.ipynb'
+      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
+      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.ipynb'
+      - 'Terraform Demo': 'notebooks/terraform-demo.ipynb'
   - 'ru':
     - 'Home': 'ru/index.md'
     - 'AWS': 'ru/aws.md'
+    - 'GCP': 
+      - 'Home': 'ru/gcp/index.md'
     - 'Tailscale': 'ru/tailscale.md'
   - 'pl':
     - 'Home': 'pl/index.md'
     - 'AWS': 'pl/aws.md'
+    - 'GCP': 
+      - 'Home': 'pl/gcp/index.md'
     - 'Tailscale': 'pl/tailscale.md'
 
 plugins:
@@ -35,3 +49,4 @@ plugins:
         en: English
         ru: Русский
         pl: Polski
+  - jupyter

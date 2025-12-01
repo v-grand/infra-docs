@@ -24,7 +24,7 @@ jobs:
           key: ${{ runner.os }}-pip-mkdocs
 
       - name: Install dependencies
-        run: pip install mkdocs-material mkdocs-i18n
+        run: pip install mkdocs-material mkdocs-i18n mkdocs-jupyter
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
