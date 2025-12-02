@@ -17,13 +17,12 @@ jobs:
         with:
           python-version: '3.x' 
       
-      - name: Install dependencies
+      - name: Install dependencies (Fixed Versions)
         run: |
-          pip install mkdocs mkdocs-material mkdocs-i18n mkdocs-jupyter jupyter nbconvert
+          pip install mkdocs mkdocs-material mkdocs-i18n
+          pip install mkdocs-jupyter==0.15.1 nbconvert==6.0.7 jupyter
       
       - name: Build MkDocs site
-        env:
-          JUPYTER_PLATFORM_DIRS: "1"
         run: mkdocs build
 
       - name: Create redirect
