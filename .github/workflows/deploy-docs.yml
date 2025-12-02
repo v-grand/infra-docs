@@ -23,6 +23,10 @@ jobs:
       
       - name: Build MkDocs site
         run: mkdocs build
+
+      - name: Create redirect
+        run: |
+          echo '<meta http-equiv="refresh" content="0; url=en/" />' > site/index.html
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
