@@ -16,16 +16,26 @@ theme:
 nav:
   - 'en':
     - 'Home': 'en/index.md'
-    - 'Infra Core': 'en/infra-core.md'
+    - 'Core Libraries':
+      - 'Infra Core': 'en/infra-core.md'
+      - 'Infra Template': 'en/infra-template.md'
+      - 'Infra CI': 'en/infra-ci.md'
+    - 'Cloud Infrastructure':
+      - 'AWS': 'en/aws.md'
+      - 'GCP': 
+        - 'Home': 'en/gcp/index.md'
+        - 'VM': 'en/gcp/vm.md'
+        - 'DB': 'en/gcp/db.md'
+        - 'K8s': 'en/gcp/k8s.md'
+      - 'Network': 'en/infra-network.md'
+    - 'Platform Services':
+      - 'Monitoring': 'en/infra-monitoring.md'
+      - 'Secrets Management': 'en/infra-secrets.md'
+      - 'Kubernetes': 'en/infra-k8s.md'
     - 'Examples':
       - 'AWS Dev': 'en/examples/aws-dev.md'
-    - 'AWS': 'en/aws.md'
-    - 'GCP': 
-      - 'Home': 'en/gcp/index.md'
-      - 'VM': 'en/gcp/vm.md'
-      - 'DB': 'en/gcp/db.md'
-      - 'K8s': 'en/gcp/k8s.md'
-    - 'Tailscale': 'en/tailscale.md'
+    - 'Integrations':
+      - 'Tailscale': 'en/tailscale.md'
     - 'Notebooks':
       - 'Example': 'docs/notebooks/example.md'
       - 'CI/CD Pipeline': 'docs/notebooks/ci-cd-pipeline.md'
@@ -34,16 +44,26 @@ nav:
       - 'Terraform Demo': 'docs/notebooks/terraform-demo.md'
   - 'ru':
     - 'Home': 'ru/index.md'
-    - 'Infra Core': 'ru/infra-core.md'
+    - 'Core Libraries':
+      - 'Infra Core': 'ru/infra-core.md'
+      - 'Infra Template': 'ru/infra-template.md'
+      - 'Infra CI': 'ru/infra-ci.md'
+    - 'Cloud Infrastructure':
+      - 'AWS': 'ru/aws.md'
+      - 'GCP': 
+        - 'Home': 'ru/gcp/index.md'
+        - 'VM': 'ru/gcp/vm.md'
+        - 'DB': 'ru/gcp/db.md'
+        - 'K8s': 'ru/gcp/k8s.md'
+      - 'Network': 'ru/infra-network.md'
+    - 'Platform Services':
+      - 'Monitoring': 'ru/infra-monitoring.md'
+      - 'Secrets Management': 'ru/infra-secrets.md'
+      - 'Kubernetes': 'ru/infra-k8s.md'
     - 'Examples':
       - 'AWS Dev': 'ru/examples/aws-dev.md'
-    - 'AWS': 'ru/aws.md'
-    - 'GCP': 
-      - 'Home': 'ru/gcp/index.md'
-      - 'VM': 'ru/gcp/vm.md'
-      - 'DB': 'ru/gcp/db.md'
-      - 'K8s': 'ru/gcp/k8s.md'
-    - 'Tailscale': 'ru/tailscale.md'
+    - 'Integrations':
+      - 'Tailscale': 'ru/tailscale.md'
     - 'Notebooks':
       - 'Example': 'docs/notebooks/example.md'
       - 'CI/CD Pipeline': 'docs/notebooks/ci-cd-pipeline.md'
@@ -52,16 +72,26 @@ nav:
       - 'Terraform Demo': 'docs/notebooks/terraform-demo.md'
   - 'pl':
     - 'Home': 'pl/index.md'
-    - 'Infra Core': 'pl/infra-core.md'
+    - 'Core Libraries':
+      - 'Infra Core': 'pl/infra-core.md'
+      - 'Infra Template': 'pl/infra-template.md'
+      - 'Infra CI': 'pl/infra-ci.md'
+    - 'Cloud Infrastructure':
+      - 'AWS': 'pl/aws.md'
+      - 'GCP': 
+        - 'Home': 'pl/gcp/index.md'
+        - 'VM': 'pl/gcp/vm.md'
+        - 'DB': 'pl/gcp/db.md'
+        - 'K8s': 'pl/gcp/k8s.md'
+      - 'Network': 'pl/infra-network.md'
+    - 'Platform Services':
+      - 'Monitoring': 'pl/infra-monitoring.md'
+      - 'Secrets Management': 'pl/infra-secrets.md'
+      - 'Kubernetes': 'pl/infra-k8s.md'
     - 'Examples':
       - 'AWS Dev': 'pl/examples/aws-dev.md'
-    - 'AWS': 'pl/aws.md'
-    - 'GCP': 
-      - 'Home': 'pl/gcp/index.md'
-      - 'VM': 'pl/gcp/vm.md'
-      - 'DB': 'pl/gcp/db.md'
-      - 'K8s': 'pl/gcp/k8s.md'
-    - 'Tailscale': 'pl/tailscale.md'
+    - 'Integrations':
+      - 'Tailscale': 'pl/tailscale.md'
     - 'Notebooks':
       - 'Example': 'docs/notebooks/example.md'
       - 'CI/CD Pipeline': 'docs/notebooks/ci-cd-pipeline.md'
