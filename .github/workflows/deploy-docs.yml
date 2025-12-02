@@ -17,11 +17,14 @@ jobs:
         with:
           python-version: '3.x' 
       
-      - name: Install dependencies (Fixed Versions)
+      - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-i18n
-          pip install mkdocs-jupyter==0.15.1 nbconvert==6.0.7 jupyter
+          pip install mkdocs mkdocs-material mkdocs-i18n jupyter nbconvert
       
+      - name: Convert Notebooks to Markdown
+        run: |
+          find . -name "*.ipynb" -print0 | xargs -0 -I {} jupyter nbconvert --to markdown --output-dir=$(dirname {}) {}
+
       - name: Build MkDocs site
         run: mkdocs build
 
