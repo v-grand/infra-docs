@@ -398,3 +398,26 @@ tls_config:
 - [infra-core](infra-core.md) - Модули инфраструктуры
 - [infra-k8s](https://github.com/v-grand/infra-k8s) - Интеграция Kubernetes
 - [infra-network](infra-network.md) - Конфигурация сети
+
+## Схема потоков данных: Сбор логов от приложения до Grafana
+
+```mermaid
+graph TD
+    subgraph "Приложение"
+        A[Приложение] -- "Генерирует логи" --> B(stdout/stderr)
+    end
+
+    subgraph "Сбор логов"
+        B -- "Собирает логи" --> C(Promtail Agent)
+        C -- "Отправляет логи" --> D(Loki)
+    end
+
+    subgraph "Визуализация"
+        D -- "Хранит и индексирует логи" --> E(Grafana)
+        E -- "Запрашивает и отображает логи" --> F[Пользователь]
+    end
+
+    A -- "Метрики" --> G(Prometheus Exporter)
+    G -- "Скрапинг метрик" --> H(Prometheus)
+    H -- "Запрашивает и отображает метрики" --> E
+```
