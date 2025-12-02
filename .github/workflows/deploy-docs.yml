@@ -1,33 +1,34 @@
-name: Deploy Docs
-
+name: Deploy MkDocs Documentation
 on:
   push:
     branches:
-      - main
+      - main  # Запуск при пуше в ветку main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
+      
+      # Шаг 1: Настройка Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-mkdocs
-
-      - name: Install dependencies
-        run: pip install mkdocs-material mkdocs-i18n mkdocs-jupyter jupyter nbconvert
-
-      - name: Build site
-        run: mkdocs build
-
+          python-version: '3.x' 
+      
+      # Шаг 2: Установка ВСЕХ зависимостей MkDocs
+      - name: Install dependencies (MkDocs, Material, i18n, Jupyter)
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-i18n mkdocs-jupyter
+      
+      # Шаг 3: Сборка сайта MkDocs
+      # Это команда, которая локально у вас вызывала ошибку, но здесь сработает
+      - name: Build MkDocs site
+        run: py -m mkdocs build
+      
+      # Шаг 4: Развертывание (Деплой)
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site # MkDocs всегда собирает сайт в папку 'site'
