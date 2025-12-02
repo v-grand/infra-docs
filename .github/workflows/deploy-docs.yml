@@ -24,7 +24,7 @@ jobs:
       # Шаг 3: Сборка сайта MkDocs
       # Это команда, которая локально у вас вызывала ошибку, но здесь сработает
       - name: Build MkDocs site
-        run: py -m mkdocs build
+        run: mkdocs build
       
       # Шаг 4: Развертывание (Деплой)
       - name: Deploy to GitHub Pages
