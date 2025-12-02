@@ -1434,12 +1434,12 @@
   <a href="#infra-docs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Добро пожаловать# Добро пожаловать в Infra Docs
+        Добро пожаловать в Infra Docs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Добро пожаловать# Добро пожаловать в Infra Docs">
+    <nav class="md-nav" aria-label="Добро пожаловать в Infra Docs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1580,6 +1580,17 @@
     <span class="md-ellipsis">
       
         📄 Лицензия
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подробная схема архитектуры
       
     </span>
   </a>
@@ -2708,14 +2719,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-template.md" class="md-nav__link">
+      <a href="../pl/infra-template/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Infra Template
+    Infra Template (English)
   
 
     
@@ -2736,14 +2747,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-ci.md" class="md-nav__link">
+      <a href="../pl/infra-ci/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Infra CI
+    Infra CI (English)
   
 
     
@@ -3020,14 +3031,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-network.md" class="md-nav__link">
+      <a href="../pl/infra-network/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Network
+    Network (English)
   
 
     
@@ -3106,14 +3117,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-monitoring.md" class="md-nav__link">
+      <a href="../pl/infra-monitoring/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Monitoring
+    Monitoring (English)
   
 
     
@@ -3134,14 +3145,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-secrets.md" class="md-nav__link">
+      <a href="../pl/infra-secrets/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Secrets Management
+    Secrets Management (English)
   
 
     
@@ -3162,14 +3173,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-k8s.md" class="md-nav__link">
+      <a href="../pl/infra-k8s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Kubernetes
+    Kubernetes (English)
   
 
     
@@ -3596,12 +3607,12 @@
   <a href="#infra-docs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Добро пожаловать# Добро пожаловать в Infra Docs
+        Добро пожаловать в Infra Docs
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Добро пожаловать# Добро пожаловать в Infra Docs">
+    <nav class="md-nav" aria-label="Добро пожаловать в Infra Docs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3748,6 +3759,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подробная схема архитектуры
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3778,7 +3800,7 @@
 <ul>
 <li class="i18n-link i18n-link-found i18n-link-en"><a href="../ru/">English</a></li>
 </ul>
-<h2 id="infra-docs">Добро пожаловать# Добро пожаловать в Infra Docs</h2>
+<h2 id="infra-docs">Добро пожаловать в Infra Docs</h2>
 <p>Добро пожаловать в полную документацию экосистемы инфраструктуры <strong>v-grand</strong>. Этот набор репозиториев предоставляет готовое production-решение для мультиоблачных развёртываний.</p>
 <h3 id="_1">📚 Обзор архитектуры</h3>
 <p>Инфраструктурная экосистема построена на модульной архитектуре, где каждый репозиторий служит определённой цели:</p>
@@ -3935,6 +3957,38 @@
 <p>Мы приветствуем вклад в проект! Пожалуйста, смотрите руководства по вкладу в отдельных репозиториях.</p>
 <h3 id="_12">📄 Лицензия</h3>
 <p>Все репозитории лицензированы под MIT License, если не указано иное.</p>
+<h3 id="_13">Подробная схема архитектуры</h3>
+<pre><code class="language-mermaid">graph TD
+    subgraph &quot;Разработка и CI/CD&quot;
+        A[Разработчик] --&gt; B(Git Репозиторий)
+        B -- &quot;Push&quot; --&gt; C(infra-ci: GitHub Actions)
+    end
+
+    subgraph &quot;Инфраструктура как код (IaC)&quot;
+        C -- &quot;Использует&quot; --&gt; D(infra-template: Шаблон проекта)
+        D -- &quot;Содержит&quot; --&gt; E(infra-core: Модули Terraform)
+    end
+
+    subgraph &quot;Облачные провайдеры&quot;
+        E -- &quot;Развертывает в&quot; --&gt; F(infra-aws: Инфраструктура AWS)
+        E -- &quot;Развертывает в&quot; --&gt; G(infra-gcp: Инфраструктура GCP)
+    end
+
+    subgraph &quot;Платформенные сервисы&quot;
+        F -- &quot;Использует&quot; --&gt; H(infra-network: Сетевая конфигурация)
+        G -- &quot;Использует&quot; --&gt; H
+        F -- &quot;Использует&quot; --&gt; I(infra-secrets: Управление секретами)
+        G -- &quot;Использует&quot; --&gt; I
+        F -- &quot;Использует&quot; --&gt; J(infra-monitoring: Стек мониторинга)
+        G -- &quot;Использует&quot; --&gt; J
+        F -- &quot;Использует&quot; --&gt; K(infra-k8s: Кластеры Kubernetes)
+        G -- &quot;Использует&quot; --&gt; K
+    end
+
+    K -- &quot;Развертывает приложения&quot; --&gt; L(Приложения)
+    J -- &quot;Мониторит&quot; --&gt; L
+    I -- &quot;Предоставляет секреты&quot; --&gt; L
+</code></pre>
 
 
 

@@ -9,26 +9,28 @@
       
       
       
+        <link rel="prev" href="../infra-secrets/">
       
-        <link rel="next" href="infra-core/">
+      
+        <link rel="next" href="../examples/aws-dev/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/logo.svg">
+      <link rel="icon" href="../../assets/images/logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Home - Infra Docs</title>
+        <title>Kubernetes - Infra Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-infra-docs" class="md-skip">
+        <a href="#rozpoczecie-pracy-infra-k8s" class="md-skip">
           Skip to content
         </a>
       
@@ -84,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Infra Docs" class="md-header__button md-logo" aria-label="Infra Docs" data-md-component="logo">
+    <a href="../.." title="Infra Docs" class="md-header__button md-logo" aria-label="Infra Docs" data-md-component="logo">
       
-  <img src="../assets/images/logo.svg" alt="logo">
+  <img src="../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Kubernetes
             
           </span>
         </div>
@@ -186,13 +188,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../en/" class="md-tabs__link">
           
   
   
@@ -219,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../ru/infra-core/" class="md-tabs__link">
+        <a href="../../ru/infra-core/" class="md-tabs__link">
           
   
   
@@ -238,6 +238,8 @@
   
   
   
+    
+  
   
     
     
@@ -245,11 +247,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../pl/infra-core/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../infra-core/" class="md-tabs__link">
           
   
   
@@ -286,9 +290,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Infra Docs" class="md-nav__button md-logo" aria-label="Infra Docs" data-md-component="logo">
+    <a href="../.." title="Infra Docs" class="md-nav__button md-logo" aria-label="Infra Docs" data-md-component="logo">
       
-  <img src="../assets/images/logo.svg" alt="logo">
+  <img src="../../assets/images/logo.svg" alt="logo">
 
     </a>
     Infra Docs
@@ -312,29 +316,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -352,7 +351,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -367,35 +366,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../en/" class="md-nav__link">
         
   
   
@@ -411,185 +385,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#welcome-to-infra-docs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Welcome to Infra Docs
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Welcome to Infra Docs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 Architecture Overview
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repository-guide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗂️ Repository Guide
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗂️ Repository Guide">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Libraries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#platform-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Platform Services
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Quick Start
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for-new-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For New Projects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#for-existing-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For Existing Projects
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#documentation-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 Documentation Structure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#external-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 External Resources
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🤝 Contributing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📄 License
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -652,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-core/" class="md-nav__link">
+      <a href="../../en/infra-core/" class="md-nav__link">
         
   
   
@@ -680,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-template/" class="md-nav__link">
+      <a href="../../en/infra-template/" class="md-nav__link">
         
   
   
@@ -708,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-ci/" class="md-nav__link">
+      <a href="../../en/infra-ci/" class="md-nav__link">
         
   
   
@@ -794,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aws/" class="md-nav__link">
+      <a href="../../en/aws/" class="md-nav__link">
         
   
   
@@ -872,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gcp/" class="md-nav__link">
+      <a href="../../en/gcp/" class="md-nav__link">
         
   
   
@@ -900,7 +695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gcp/vm/" class="md-nav__link">
+      <a href="../../en/gcp/vm/" class="md-nav__link">
         
   
   
@@ -928,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gcp/db/" class="md-nav__link">
+      <a href="../../en/gcp/db/" class="md-nav__link">
         
   
   
@@ -956,7 +751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gcp/k8s/" class="md-nav__link">
+      <a href="../../en/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -992,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-network/" class="md-nav__link">
+      <a href="../../en/infra-network/" class="md-nav__link">
         
   
   
@@ -1078,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-monitoring/" class="md-nav__link">
+      <a href="../../en/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -1106,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-secrets/" class="md-nav__link">
+      <a href="../../en/infra-secrets/" class="md-nav__link">
         
   
   
@@ -1134,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="infra-k8s/" class="md-nav__link">
+      <a href="../../en/infra-k8s/" class="md-nav__link">
         
   
   
@@ -1220,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="examples/aws-dev/" class="md-nav__link">
+      <a href="../../en/examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -1306,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tailscale/" class="md-nav__link">
+      <a href="../../en/tailscale/" class="md-nav__link">
         
   
   
@@ -1392,7 +1187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/example.md" class="md-nav__link">
+      <a href="../../docs/notebooks/example.md" class="md-nav__link">
         
   
   
@@ -1420,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/ci-cd-pipeline.md" class="md-nav__link">
+      <a href="../../docs/notebooks/ci-cd-pipeline.md" class="md-nav__link">
         
   
   
@@ -1448,7 +1243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/infra-core-usage.md" class="md-nav__link">
+      <a href="../../docs/notebooks/infra-core-usage.md" class="md-nav__link">
         
   
   
@@ -1476,7 +1271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/tailscale-mesh.md" class="md-nav__link">
+      <a href="../../docs/notebooks/tailscale-mesh.md" class="md-nav__link">
         
   
   
@@ -1504,7 +1299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/terraform-demo.md" class="md-nav__link">
+      <a href="../../docs/notebooks/terraform-demo.md" class="md-nav__link">
         
   
   
@@ -1647,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-core/" class="md-nav__link">
+      <a href="../../ru/infra-core/" class="md-nav__link">
         
   
   
@@ -1675,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-template/" class="md-nav__link">
+      <a href="../../ru/infra-template/" class="md-nav__link">
         
   
   
@@ -1703,7 +1498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-ci/" class="md-nav__link">
+      <a href="../../ru/infra-ci/" class="md-nav__link">
         
   
   
@@ -1789,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/aws/" class="md-nav__link">
+      <a href="../../ru/aws/" class="md-nav__link">
         
   
   
@@ -1867,7 +1662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/gcp/" class="md-nav__link">
+      <a href="../../ru/gcp/" class="md-nav__link">
         
   
   
@@ -1895,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/gcp/vm/" class="md-nav__link">
+      <a href="../../ru/gcp/vm/" class="md-nav__link">
         
   
   
@@ -1923,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/gcp/db/" class="md-nav__link">
+      <a href="../../ru/gcp/db/" class="md-nav__link">
         
   
   
@@ -1951,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/gcp/k8s/" class="md-nav__link">
+      <a href="../../ru/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -1987,7 +1782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-network/" class="md-nav__link">
+      <a href="../../ru/infra-network/" class="md-nav__link">
         
   
   
@@ -2073,7 +1868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-monitoring/" class="md-nav__link">
+      <a href="../../ru/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -2101,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-secrets/" class="md-nav__link">
+      <a href="../../ru/infra-secrets/" class="md-nav__link">
         
   
   
@@ -2129,7 +1924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/infra-k8s/" class="md-nav__link">
+      <a href="../../ru/infra-k8s/" class="md-nav__link">
         
   
   
@@ -2215,7 +2010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/examples/aws-dev/" class="md-nav__link">
+      <a href="../../ru/examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -2301,7 +2096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ru/tailscale/" class="md-nav__link">
+      <a href="../../ru/tailscale/" class="md-nav__link">
         
   
   
@@ -2387,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/example.md" class="md-nav__link">
+      <a href="../../docs/notebooks/example.md" class="md-nav__link">
         
   
   
@@ -2415,7 +2210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/ci-cd-pipeline.md" class="md-nav__link">
+      <a href="../../docs/notebooks/ci-cd-pipeline.md" class="md-nav__link">
         
   
   
@@ -2443,7 +2238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/infra-core-usage.md" class="md-nav__link">
+      <a href="../../docs/notebooks/infra-core-usage.md" class="md-nav__link">
         
   
   
@@ -2471,7 +2266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/tailscale-mesh.md" class="md-nav__link">
+      <a href="../../docs/notebooks/tailscale-mesh.md" class="md-nav__link">
         
   
   
@@ -2499,7 +2294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/terraform-demo.md" class="md-nav__link">
+      <a href="../../docs/notebooks/terraform-demo.md" class="md-nav__link">
         
   
   
@@ -2539,24 +2334,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -2574,7 +2374,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2642,7 +2442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-core/" class="md-nav__link">
+      <a href="../infra-core/" class="md-nav__link">
         
   
   
@@ -2670,7 +2470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-template/" class="md-nav__link">
+      <a href="../infra-template/" class="md-nav__link">
         
   
   
@@ -2698,7 +2498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-ci/" class="md-nav__link">
+      <a href="../infra-ci/" class="md-nav__link">
         
   
   
@@ -2784,7 +2584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/aws/" class="md-nav__link">
+      <a href="../aws/" class="md-nav__link">
         
   
   
@@ -2862,7 +2662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/gcp/" class="md-nav__link">
+      <a href="../gcp/" class="md-nav__link">
         
   
   
@@ -2890,7 +2690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/gcp/vm/" class="md-nav__link">
+      <a href="../gcp/vm/" class="md-nav__link">
         
   
   
@@ -2918,7 +2718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/gcp/db/" class="md-nav__link">
+      <a href="../gcp/db/" class="md-nav__link">
         
   
   
@@ -2946,7 +2746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/gcp/k8s/" class="md-nav__link">
+      <a href="../gcp/k8s/" class="md-nav__link">
         
   
   
@@ -2982,7 +2782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-network/" class="md-nav__link">
+      <a href="../infra-network/" class="md-nav__link">
         
   
   
@@ -3015,6 +2815,8 @@
                 
   
   
+    
+  
   
   
     
@@ -3025,11 +2827,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -3050,7 +2852,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3068,7 +2870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-monitoring/" class="md-nav__link">
+      <a href="../infra-monitoring/" class="md-nav__link">
         
   
   
@@ -3096,7 +2898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/infra-secrets/" class="md-nav__link">
+      <a href="../infra-secrets/" class="md-nav__link">
         
   
   
@@ -3121,10 +2923,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pl/infra-k8s/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -3140,6 +2967,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rozpoczecie-pracy-infra-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rozpoczęcie pracy: infra-k8s
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rozpoczęcie pracy: infra-k8s">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#krotki-opis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Krótki opis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3210,7 +3083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/examples/aws-dev/" class="md-nav__link">
+      <a href="../examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -3296,7 +3169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pl/tailscale/" class="md-nav__link">
+      <a href="../tailscale/" class="md-nav__link">
         
   
   
@@ -3382,7 +3255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/example.md" class="md-nav__link">
+      <a href="../../docs/notebooks/example.md" class="md-nav__link">
         
   
   
@@ -3410,7 +3283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/ci-cd-pipeline.md" class="md-nav__link">
+      <a href="../../docs/notebooks/ci-cd-pipeline.md" class="md-nav__link">
         
   
   
@@ -3438,7 +3311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/infra-core-usage.md" class="md-nav__link">
+      <a href="../../docs/notebooks/infra-core-usage.md" class="md-nav__link">
         
   
   
@@ -3466,7 +3339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/tailscale-mesh.md" class="md-nav__link">
+      <a href="../../docs/notebooks/tailscale-mesh.md" class="md-nav__link">
         
   
   
@@ -3494,7 +3367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs/notebooks/terraform-demo.md" class="md-nav__link">
+      <a href="../../docs/notebooks/terraform-demo.md" class="md-nav__link">
         
   
   
@@ -3555,155 +3428,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#welcome-to-infra-docs" class="md-nav__link">
+  <a href="#rozpoczecie-pracy-infra-k8s" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Welcome to Infra Docs
+        Rozpoczęcie pracy: infra-k8s
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Welcome to Infra Docs">
+    <nav class="md-nav" aria-label="Rozpoczęcie pracy: infra-k8s">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
+  <a href="#krotki-opis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 Architecture Overview
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repository-guide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗂️ Repository Guide
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗂️ Repository Guide">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#core-libraries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Libraries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-infrastructure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Infrastructure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#platform-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Platform Services
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Quick Start
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Quick Start">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#for-new-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For New Projects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#for-existing-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        For Existing Projects
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#documentation-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 Documentation Structure
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#external-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 External Resources
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🤝 Contributing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📄 License
+        Krótki opis
       
     </span>
   </a>
@@ -3735,165 +3475,15 @@
   
 
 
-  <h1>Home</h1>
+  <h1>Kubernetes</h1>
 
-<h2 id="welcome-to-infra-docs">Welcome to Infra Docs</h2>
-<p>Welcome to the comprehensive documentation for the <strong>v-grand infrastructure ecosystem</strong>. This suite of repositories provides a complete, production-ready infrastructure-as-code (IaC) solution for multi-cloud deployments.</p>
-<h3 id="architecture-overview">📚 Architecture Overview</h3>
-<p>The infrastructure ecosystem is built on a modular architecture where each repository serves a specific purpose:</p>
-<pre><code>┌─────────────────────┐
-│    infra-docs       │  ← Documentation &amp; Examples
-└─────────────────────┘
-          │
-          ├─► infra-core       (Reusable Terraform Modules)
-          ├─► infra-template   (Project Template)
-          ├─► infra-ci         (CI/CD Workflows)
-          │
-          └─► Application Repositories:
-              ├─► infra-aws        (AWS Infrastructure)
-              ├─► infra-gcp        (GCP Infrastructure)
-              ├─► infra-network    (Network Configuration)
-              ├─► infra-monitoring (Observability Stack)
-              ├─► infra-secrets    (Secrets Management)
-              └─► infra-k8s        (Kubernetes Clusters)
-</code></pre>
-<h3 id="repository-guide">🗂️ Repository Guide</h3>
-<h4 id="core-libraries">Core Libraries</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Repository</th>
-<th style="text-align: left;">Purpose</th>
-<th style="text-align: left;">Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong><a href="infra-core/">infra-core</a></strong></td>
-<td style="text-align: left;">Reusable Terraform modules (VM, VPC, DB, K8s, Tailscale)</td>
-<td style="text-align: left;">✅ Active</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-template">infra-template</a></strong></td>
-<td style="text-align: left;">Standardized template for new infrastructure projects</td>
-<td style="text-align: left;">✅ Active</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-ci">infra-ci</a></strong></td>
-<td style="text-align: left;">Reusable GitHub Actions workflows for CI/CD</td>
-<td style="text-align: left;">✅ Active</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-docs">infra-docs</a></strong></td>
-<td style="text-align: left;">Documentation website (this site)</td>
-<td style="text-align: left;">✅ Active</td>
-</tr>
-</tbody>
-</table>
-<h4 id="cloud-infrastructure">Cloud Infrastructure</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Repository</th>
-<th style="text-align: left;">Purpose</th>
-<th style="text-align: left;">Supported Clouds</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong><a href="aws/">infra-aws</a></strong></td>
-<td style="text-align: left;">AWS infrastructure deployment</td>
-<td style="text-align: left;">AWS</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="gcp/">infra-gcp</a></strong></td>
-<td style="text-align: left;">GCP infrastructure deployment</td>
-<td style="text-align: left;">GCP</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-network">infra-network</a></strong></td>
-<td style="text-align: left;">VPC, VPN, Tailscale mesh networking</td>
-<td style="text-align: left;">AWS, GCP</td>
-</tr>
-</tbody>
-</table>
-<h4 id="platform-services">Platform Services</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Repository</th>
-<th style="text-align: left;">Purpose</th>
-<th style="text-align: left;">Key Technologies</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-monitoring">infra-monitoring</a></strong></td>
-<td style="text-align: left;">Observability &amp; logging stack</td>
-<td style="text-align: left;">Prometheus, Grafana, Loki</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-secrets">infra-secrets</a></strong></td>
-<td style="text-align: left;">Centralized secrets management</td>
-<td style="text-align: left;">Vault, SOPS, GCP Secrets</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong><a href="https://github.com/v-grand/infra-k8s">infra-k8s</a></strong></td>
-<td style="text-align: left;">Kubernetes cluster management</td>
-<td style="text-align: left;">GKE, EKS, K3s</td>
-</tr>
-</tbody>
-</table>
-<h3 id="quick-start">🚀 Quick Start</h3>
-<h4 id="for-new-projects">For New Projects</h4>
-<ol>
-<li>
-<p><strong>Clone the template:</strong>
-   <code>bash
-   git clone https://github.com/v-grand/infra-template.git my-new-project
-   cd my-new-project</code></p>
-</li>
-<li>
-<p><strong>Configure your environment:</strong>
-   <code>bash
-   cp terraform.tfvars.example terraform.tfvars
-   # Edit terraform.tfvars with your settings</code></p>
-</li>
-<li>
-<p><strong>Deploy:</strong>
-   <code>bash
-   terraform init
-   terraform plan
-   terraform apply</code></p>
-</li>
-</ol>
-<h4 id="for-existing-projects">For Existing Projects</h4>
-<p>Choose the appropriate repository based on your needs:</p>
-<ul>
-<li><strong>AWS Deployment</strong> → <a href="aws/">infra-aws</a></li>
-<li><strong>GCP Deployment</strong> → <a href="gcp/">infra-gcp</a></li>
-<li><strong>Kubernetes</strong> → <a href="https://github.com/v-grand/infra-k8s">infra-k8s</a></li>
-<li><strong>Monitoring</strong> → <a href="https://github.com/v-grand/infra-monitoring">infra-monitoring</a></li>
-</ul>
-<h3 id="documentation-structure">📖 Documentation Structure</h3>
-<ul>
-<li><strong><a href="infra-core/">Infra Core Modules</a></strong> - Detailed module documentation</li>
-<li><strong><a href="examples/aws-dev/">AWS Examples</a></strong> - AWS deployment examples</li>
-<li><strong><a href="gcp/">GCP Guides</a></strong> - GCP-specific documentation</li>
-<li><strong><a href="tailscale/">Tailscale Integration</a></strong> - Mesh networking setup</li>
-<li><strong><a href="../../notebooks/">Notebooks</a></strong> - Interactive examples and tutorials</li>
-</ul>
-<h3 id="external-resources">🔗 External Resources</h3>
-<ul>
-<li><a href="https://www.terraform.io/docs">Terraform Documentation</a></li>
-<li><a href="https://docs.github.com/en/actions">GitHub Actions Documentation</a></li>
-<li><a href="https://aws.amazon.com/architecture/well-architected/">AWS Well-Architected Framework</a></li>
-<li><a href="https://cloud.google.com/architecture">Google Cloud Architecture Center</a></li>
-</ul>
-<h3 id="contributing">🤝 Contributing</h3>
-<p>We welcome contributions! Please see the individual repository guidelines for contribution instructions.</p>
-<h3 id="license">📄 License</h3>
-<p>All repositories are licensed under the MIT License unless otherwise specified.</p>
+<h2 id="rozpoczecie-pracy-infra-k8s">Rozpoczęcie pracy: infra-k8s</h2>
+<p>Dokumentacja jest w trakcie tłumaczenia.</p>
+<p>Zobacz <a href="../../en/infra-k8s/">wersję angielską</a> dla pełnej dokumentacji.</p>
+<h3 id="krotki-opis">Krótki opis</h3>
+<p><strong>infra-k8s</strong> zarządza klastrami Kubernetes w GKE, EKS i K3s.</p>
+<hr />
+<p><strong>Pełna dokumentacja:</strong> <a href="../../en/infra-k8s/">English version</a></p>
 
 
 
@@ -3943,10 +3533,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>

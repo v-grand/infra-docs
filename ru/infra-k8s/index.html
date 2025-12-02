@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#infra-k8s" class="md-skip">
+        <a href="#infra-k8s-kubernetes" class="md-skip">
           Skip to content
         </a>
       
@@ -1987,22 +1987,294 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#infra-k8s" class="md-nav__link">
+  <a href="#infra-k8s-kubernetes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Начало работы: infra-k8s
+        infra-k8s: Инфраструктура Kubernetes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Начало работы: infra-k8s">
+    <nav class="md-nav" aria-label="infra-k8s: Инфраструктура Kubernetes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Краткое описание
+        🎯 Назначение
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 Структура репозитория
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ☸️ Модули кластера
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☸️ Модули кластера">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gke-google-kubernetes-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GKE (Google Kubernetes Engine)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-eks-amazon-elastic-kubernetes-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. EKS (Amazon Elastic Kubernetes Service)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-k3s-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. K3s (Легковесный Kubernetes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Системные дополнения
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Системные дополнения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Контроллер входящего трафика
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Контроллер входящего трафика">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nginx-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NGINX Ingress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traefik-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traefik Ingress
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cert-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cert-Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-external-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. External-DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-kube-prometheus-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Kube Prometheus Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Быстрый старт
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Быстрый старт">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Развертывание кластера GKE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Развертывание кластера EKS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Установка системных компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Лучшие практики
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Примеры интеграции
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Примеры интеграции">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infra-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        С infra-monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infra-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        С infra-secrets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Документация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Связанные репозитории
       
     </span>
   </a>
@@ -2543,7 +2815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-template.md" class="md-nav__link">
+      <a href="../../pl/infra-template/" class="md-nav__link">
         
   
   
@@ -2571,7 +2843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-ci.md" class="md-nav__link">
+      <a href="../../pl/infra-ci/" class="md-nav__link">
         
   
   
@@ -2855,7 +3127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-network.md" class="md-nav__link">
+      <a href="../../pl/infra-network/" class="md-nav__link">
         
   
   
@@ -2941,7 +3213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-monitoring.md" class="md-nav__link">
+      <a href="../../pl/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -2969,7 +3241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-secrets.md" class="md-nav__link">
+      <a href="../../pl/infra-secrets/" class="md-nav__link">
         
   
   
@@ -2997,7 +3269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-k8s.md" class="md-nav__link">
+      <a href="../../pl/infra-k8s/" class="md-nav__link">
         
   
   
@@ -3428,22 +3700,294 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#infra-k8s" class="md-nav__link">
+  <a href="#infra-k8s-kubernetes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Начало работы: infra-k8s
+        infra-k8s: Инфраструктура Kubernetes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Начало работы: infra-k8s">
+    <nav class="md-nav" aria-label="infra-k8s: Инфраструктура Kubernetes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Краткое описание
+        🎯 Назначение
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 Структура репозитория
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ☸️ Модули кластера
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☸️ Модули кластера">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gke-google-kubernetes-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GKE (Google Kubernetes Engine)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-eks-amazon-elastic-kubernetes-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. EKS (Amazon Elastic Kubernetes Service)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-k3s-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. K3s (Легковесный Kubernetes)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Системные дополнения
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Системные дополнения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Контроллер входящего трафика
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Контроллер входящего трафика">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nginx-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NGINX Ingress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traefik-ingress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Traefik Ingress
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cert-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cert-Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-external-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. External-DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-kube-prometheus-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Kube Prometheus Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Быстрый старт
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Быстрый старт">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Развертывание кластера GKE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Развертывание кластера EKS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Установка системных компонентов
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Лучшие практики
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Примеры интеграции
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Примеры интеграции">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#infra-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        С infra-monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infra-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        С infra-secrets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 Документация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Связанные репозитории
       
     </span>
   </a>
@@ -3477,13 +4021,523 @@
 
   <h1>Kubernetes</h1>
 
-<h2 id="infra-k8s">Начало работы: infra-k8s</h2>
-<p>Документация находится в процессе перевода.</p>
-<p>См. <a href="../../en/infra-k8s/">English version</a> для полной документации.</p>
-<h3 id="_1">Краткое описание</h3>
-<p><strong>infra-k8s</strong> управляет Kubernetes кластерами в GKE, EKS и K3s.</p>
-<hr />
-<p><strong>Полная документация:</strong> <a href="../../en/infra-k8s/">English version</a></p>
+<h2 id="infra-k8s-kubernetes">infra-k8s: Инфраструктура Kubernetes</h2>
+<p><strong>infra-k8s</strong> обеспечивает полное развертывание и управление кластерами Kubernetes в GKE, EKS и K3s с интегрированными системными компонентами и мониторингом.</p>
+<h3 id="_1">🎯 Назначение</h3>
+<p>Развертывание и управление кластерами Kubernetes:</p>
+<ul>
+<li><strong>GKE</strong> - Кластеры Google Kubernetes Engine</li>
+<li><strong>EKS</strong> - Amazon Elastic Kubernetes Service</li>
+<li><strong>K3s</strong> - Легковесный Kubernetes для периферийных/локальных сред</li>
+<li><strong>Helm Charts</strong> - Развертывание системных компонентов</li>
+<li><strong>GitOps</strong> - Интеграция непрерывного развертывания</li>
+</ul>
+<h3 id="_2">📁 Структура репозитория</h3>
+<pre><code>infra-k8s/
+├── modules/
+│   ├── gke/                  # Google Kubernetes Engine
+│   ├── eks/                  # AWS EKS
+│   ├── k3s/                  # Развертывание K3s
+│   └── addons/               # Helm-чарты и системные компоненты
+│       ├── ingress/          # Входящий трафик NGINX/Traefik
+│       ├── cert-manager/     # Управление сертификатами
+│       ├── external-dns/     # Автоматизация DNS
+│       └── prometheus-stack/ # Стек мониторинга
+├── environments/
+│   ├── dev/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── terraform.tfvars.example
+│   │   └── backend.tf
+│   ├── prod/
+│   │   └── ...
+│   └── k3s-example/          # Пример K3s на VM GCP
+├── manifests/                # Манифесты Kubernetes
+├── helm-values/              # Значения Helm-чартов
+└── README.md
+</code></pre>
+<h3 id="_3">☸️ Модули кластера</h3>
+<h4 id="1-gke-google-kubernetes-engine">1. GKE (Google Kubernetes Engine)</h4>
+<p>Развертывание управляемого Kubernetes в Google Cloud.</p>
+<p><strong>Возможности:</strong>
+- Автомасштабируемые пулы узлов
+- Региональные/зональные кластеры
+- Идентификация рабочей нагрузки
+- Бинарная авторизация
+- Сетевые политики
+- Приватные кластеры</p>
+<p><strong>Пример:</strong></p>
+<pre><code class="language-hcl">module &quot;gke_cluster&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/gke&quot;
+
+  project_id = var.gcp_project_id
+  region     = &quot;us-central1&quot;
+
+  cluster_name    = &quot;production-gke&quot;
+  kubernetes_version = &quot;1.28&quot;
+
+  # Конфигурация сети
+  network    = module.vpc.network_name
+  subnetwork = module.vpc.subnet_names[0]
+
+  # Включить приватный кластер
+  enable_private_nodes    = true
+  enable_private_endpoint = false
+  master_ipv4_cidr_block  = &quot;172.16.0.0/28&quot;
+
+  # Пулы узлов
+  node_pools = [
+    {
+      name         = &quot;general-pool&quot;
+      machine_type = &quot;n2-standard-4&quot;
+      min_count    = 1
+      max_count    = 10
+      disk_size_gb = 100
+      disk_type    = &quot;pd-standard&quot;
+
+      auto_repair  = true
+      auto_upgrade = true
+
+      preemptible = false
+    },
+    {
+      name         = &quot;spot-pool&quot;
+      machine_type = &quot;n2-standard-4&quot;
+      min_count    = 0
+      max_count    = 20
+
+      preemptible = true  # Использовать спотовые экземпляры
+    }
+  ]
+
+  # Идентификация рабочей нагрузки
+  enable_workload_identity = true
+
+  # Безопасность
+  enable_network_policy = true
+  enable_pod_security_policy = true
+
+  # Мониторинг
+  enable_cloud_logging    = true
+  enable_cloud_monitoring = true
+
+  tags = {
+    Environment = &quot;production&quot;
+    ManagedBy   = &quot;terraform&quot;
+  }
+}
+</code></pre>
+<h4 id="2-eks-amazon-elastic-kubernetes-service">2. EKS (Amazon Elastic Kubernetes Service)</h4>
+<p>Развертывание управляемого Kubernetes в AWS.</p>
+<p><strong>Возможности:</strong>
+- Управляемая плоскость управления
+- Несколько групп узлов (по требованию + спотовые)
+- Политики безопасности подов
+- IRSA (роли IAM для учетных записей служб)
+- Сеть VPC CNI
+- Интеграция EBS/EFS</p>
+<p><strong>Пример:</strong></p>
+<pre><code class="language-hcl">module &quot;eks_cluster&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/eks&quot;
+
+  cluster_name    = &quot;production-eks&quot;
+  cluster_version = &quot;1.28&quot;
+
+  # Конфигурация сети
+  vpc_id     = module.vpc.vpc_id
+  subnet_ids = module.vpc.private_subnet_ids
+
+  # Плоскость управления
+  cluster_endpoint_private_access = true
+  cluster_endpoint_public_access  = true
+
+  # Группы узлов
+  node_groups = {
+    general = {
+      desired_capacity = 3
+      max_capacity     = 10
+      min_capacity     = 1
+
+      instance_types = [&quot;t3.large&quot;]
+      capacity_type  = &quot;ON_DEMAND&quot;
+
+      disk_size = 100
+
+      labels = {
+        role = &quot;general&quot;
+      }
+
+      tags = {
+        Environment = &quot;production&quot;
+      }
+    }
+
+    spot = {
+      desired_capacity = 2
+      max_capacity     = 20
+      min_capacity     = 0
+
+      instance_types = [&quot;t3.large&quot;, &quot;t3a.large&quot;]
+      capacity_type  = &quot;SPOT&quot;
+
+      labels = {
+        role = &quot;spot&quot;
+      }
+    }
+  }
+
+  # Включить IRSA
+  enable_irsa = true
+
+  # Дополнения кластера
+  cluster_addons = {
+    coredns = {
+      most_recent = true
+    }
+    kube-proxy = {
+      most_recent = true
+    }
+    vpc-cni = {
+      most_recent = true
+    }
+  }
+
+  tags = {
+    Environment = &quot;production&quot;
+    ManagedBy   = &quot;terraform&quot;
+  }
+}
+</code></pre>
+<h4 id="3-k3s-kubernetes">3. K3s (Легковесный Kubernetes)</h4>
+<p>Развертывание K3s для периферийных устройств, IoT или локальной разработки.</p>
+<p><strong>Возможности:</strong>
+- Минимальное потребление ресурсов
+- Один бинарный файл
+- Встроенная SQLite или внешняя БД
+- Встроенный балансировщик нагрузки (Klipper)
+- Включенный входящий трафик Traefik</p>
+<p><strong>Пример:</strong></p>
+<pre><code class="language-hcl">module &quot;k3s_cluster&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/k3s&quot;
+
+  # Узлы сервера
+  server_count = 3
+  server_instance_type = &quot;e2-medium&quot;
+
+  # Узлы агента
+  agent_count = 5
+  agent_instance_type = &quot;e2-standard-2&quot;
+
+  # Сеть
+  vpc_id     = module.vpc.vpc_id
+  subnet_ids = module.vpc.private_subnet_ids
+
+  # Хранилище
+  datastore_endpoint = &quot;postgres://user:pass@postgres.example.com:5432/k3s&quot;
+
+  # Опции
+  disable_components = [&quot;traefik&quot;]  # Использовать NGINX вместо
+
+  # TLS SANs
+  tls_san = [
+    &quot;k3s.example.com&quot;,
+    &quot;10.0.0.100&quot;
+  ]
+
+  tags = {
+    Environment = &quot;edge&quot;
+    ManagedBy   = &quot;terraform&quot;
+  }
+}
+</code></pre>
+<h3 id="_4">🔧 Системные дополнения</h3>
+<h4 id="1">1. Контроллер входящего трафика</h4>
+<h5 id="nginx-ingress">NGINX Ingress</h5>
+<pre><code class="language-hcl">module &quot;nginx_ingress&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/addons/ingress&quot;
+
+  ingress_type = &quot;nginx&quot;
+  namespace    = &quot;ingress-nginx&quot;
+
+  # Значения Helm
+  values = {
+    controller = {
+      replicaCount = 3
+
+      service = {
+        type = &quot;LoadBalancer&quot;
+        annotations = {
+          &quot;service.beta.kubernetes.io/aws-load-balancer-type&quot; = &quot;nlb&quot;
+        }
+      }
+
+      resources = {
+        requests = {
+          cpu    = &quot;100m&quot;
+          memory = &quot;128Mi&quot;
+        }
+        limits = {
+          cpu    = &quot;200m&quot;
+          memory = &quot;256Mi&quot;
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<h5 id="traefik-ingress">Traefik Ingress</h5>
+<pre><code class="language-hcl">module &quot;traefik_ingress&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/addons/ingress&quot;
+
+  ingress_type = &quot;traefik&quot;
+  namespace    = &quot;traefik&quot;
+
+  values = {
+    deployment = {
+      replicas = 3
+    }
+
+    service = {
+      type = &quot;LoadBalancer&quot;
+    }
+
+    providers = {
+      kubernetesCRD = {
+        enabled = true
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="2-cert-manager">2. Cert-Manager</h4>
+<p>Автоматическое управление TLS-сертификатами.</p>
+<pre><code class="language-hcl">module &quot;cert_manager&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/addons/cert-manager&quot;
+
+  namespace = &quot;cert-manager&quot;
+
+  # Эмитенты Let's Encrypt
+  letsencrypt_email = &quot;admin@example.com&quot;
+
+  # Создать промежуточные и производственные эмитенты
+  create_cluster_issuers = true
+
+  values = {
+    installCRDs = true
+
+    resources = {
+      requests = {
+        cpu    = &quot;10m&quot;
+        memory = &quot;32Mi&quot;
+      }
+    }
+  }
+}
+</code></pre>
+<p><strong>Пример ClusterIssuer:</strong></p>
+<pre><code class="language-yaml">apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: admin@example.com
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+</code></pre>
+<h4 id="3-external-dns">3. External-DNS</h4>
+<p>Автоматическое управление записями DNS.</p>
+<pre><code class="language-hcl">module &quot;external_dns&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/addons/external-dns&quot;
+
+  namespace = &quot;external-dns&quot;
+
+  # Конфигурация провайдера
+  provider = &quot;google&quot;  # или &quot;aws&quot;, &quot;cloudflare&quot;
+
+  # Google Cloud DNS
+  google_project = var.gcp_project_id
+
+  # Фильтры доменов
+  domain_filters = [&quot;example.com&quot;, &quot;*.example.com&quot;]
+
+  # Политика
+  policy = &quot;sync&quot;  # или &quot;upsert-only&quot;
+
+  values = {
+    resources = {
+      requests = {
+        cpu    = &quot;10m&quot;
+        memory = &quot;32Mi&quot;
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="4-kube-prometheus-stack">4. Kube Prometheus Stack</h4>
+<p>Комплексное решение для мониторинга.</p>
+<pre><code class="language-hcl">module &quot;prometheus_stack&quot; {
+  source = &quot;github.com/v-grand/infra-k8s//modules/addons/prometheus-stack&quot;
+
+  namespace = &quot;monitoring&quot;
+
+  # Prometheus
+  prometheus = {
+    retention = &quot;30d&quot;
+    storage_size = &quot;50Gi&quot;
+    storage_class = &quot;standard&quot;
+
+    resources = {
+      requests = {
+        cpu    = &quot;500m&quot;
+        memory = &quot;2Gi&quot;
+      }
+      limits = {
+        cpu    = &quot;1000m&quot;
+        memory = &quot;4Gi&quot;
+      }
+    }
+  }
+
+  # Grafana
+  grafana = {
+    enabled = true
+    admin_password = var.grafana_admin_password
+
+    ingress = {
+      enabled = true
+      host    = &quot;grafana.example.com&quot;
+      tls     = true
+    }
+  }
+
+  # AlertManager
+  alertmanager = {
+    enabled = true
+
+    config = {
+      receivers = [
+        {
+          name = &quot;slack&quot;
+          slack_configs = [
+            {
+              api_url = var.slack_webhook_url
+              channel = &quot;#alerts&quot;
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<h3 id="_5">🚀 Быстрый старт</h3>
+<h4 id="gke">Развертывание кластера GKE</h4>
+<pre><code class="language-bash"># Клонируйте репозиторий
+git clone https://github.com/v-grand/infra-k8s.git
+cd infra-k8s/environments/prod
+
+# Настройте
+cp terraform.tfvars.example terraform.tfvars
+# Отредактируйте terraform.tfvars
+
+# Разверните
+terraform init
+terraform apply
+
+# Получите kubeconfig
+gcloud container clusters get-credentials production-gke \
+  --region=us-central1 \
+  --project=my-project
+</code></pre>
+<h4 id="eks">Развертывание кластера EKS</h4>
+<pre><code class="language-bash">cd infra-k8s/environments/prod
+
+# Настройте
+cp terraform.tfvars.example terraform.tfvars
+# Отредактируйте terraform.tfvars
+
+# Разверните
+terraform init
+terraform apply
+
+# Получите kubeconfig
+aws eks update-kubeconfig \
+  --name production-eks \
+  --region us-east-1
+</code></pre>
+<h4 id="_6">Установка системных компонентов</h4>
+<pre><code class="language-bash"># Установите NGINX Ingress
+kubectl apply -f manifests/nginx-ingress.yaml
+
+# Установите Cert-Manager
+kubectl apply -f manifests/cert-manager.yaml
+
+# Установите External-DNS
+kubectl apply -f manifests/external-dns.yaml
+
+# Установите Prometheus Stack
+helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack \
+  -f helm-values/prometheus-stack.yaml \
+  -n monitoring --create-namespace
+</code></pre>
+<h3 id="_7">📚 Лучшие практики</h3>
+<ol>
+<li><strong>Ограничения ресурсов</strong> - Всегда устанавливайте запросы/ограничения ресурсов</li>
+<li><strong>Бюджеты прерываний подов</strong> - Обеспечьте высокую доступность</li>
+<li><strong>Сетевые политики</strong> - Внедрите сетевые политики с нулевым доверием</li>
+<li><strong>RBAC</strong> - Используйте доступ с наименьшими привилегиями</li>
+<li><strong>Безопасность образов</strong> - Сканируйте образы, используйте контроллеры допуска</li>
+<li><strong>Управление секретами</strong> - Используйте внешние операторы секретов</li>
+<li><strong>Резервное копирование</strong> - Регулярные резервные копии etcd/кластера</li>
+<li><strong>Multi-AZ</strong> - Развертывание в нескольких зонах доступности</li>
+</ol>
+<h3 id="_8">🔗 Примеры интеграции</h3>
+<h4 id="infra-monitoring">С infra-monitoring</h4>
+<pre><code class="language-hcl"># Развертывание мониторинга в K8s
+module &quot;monitoring&quot; {
+  source = &quot;github.com/v-grand/infra-monitoring//modules/prometheus&quot;
+
+  deploy_to_k8s = true
+  k8s_namespace = &quot;monitoring&quot;
+
+  # Использовать обнаружение служб K8s
+  prometheus_config = templatefile(&quot;prometheus-k8s.yaml&quot;, {
+    cluster_name = module.gke_cluster.cluster_name
+  })
+}
+</code></pre>
+<h4 id="infra-secrets">С infra-secrets</h4>
+<pre><code class="language-hcl"># Интеграция Vault с K8s
+module &quot;vault_k8s&quot; {
+  source = &quot;github.com/v-grand/infra-secrets//modules/vault-k8s&quot;
+
+  vault_address = &quot;https://vault.example.com&quot;
+
+  # Создать бэкэнд аутентификации Kubernetes
+  k8s_host = module.gke_cluster.endpoint
+  k8s_ca_cert = module.gke_cluster.ca_certificate
+}
+</code></pre>
+<h3 id="_9">📖 Документация</h3>
+<ul>
+<li><a href="https://kubernetes.io/docs/">Документация Kubernetes</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs">Документация GKE</a></li>
+<li><a href="https://docs.aws.amazon.com/eks/">Документация EKS</a></li>
+<li><a href="https://docs.k3s.io/">Документация K3s</a></li>
+</ul>
+<h3 id="_10">🔗 Связанные репозитории</h3>
+<ul>
+<li><a href="../infra-core/">infra-core</a> - Модули инфраструктуры</li>
+<li><a href="../infra-network/">infra-network</a> - Конфигурация сети</li>
+<li><a href="../infra-monitoring/">infra-monitoring</a> - Интеграция мониторинга</li>
+<li><a href="../infra-secrets/">infra-secrets</a> - Управление секретами</li>
+</ul>
 
 
 

@@ -2076,12 +2076,12 @@
   <a href="#aws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Пример среды разработки в AWS
+        Пример среды разработки AWS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Пример среды разработки в AWS">
+    <nav class="md-nav" aria-label="Пример среды разработки AWS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2543,7 +2543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/infra-template.md" class="md-nav__link">
+      <a href="../../../pl/infra-template/" class="md-nav__link">
         
   
   
@@ -2571,7 +2571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/infra-ci.md" class="md-nav__link">
+      <a href="../../../pl/infra-ci/" class="md-nav__link">
         
   
   
@@ -2855,7 +2855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/infra-network.md" class="md-nav__link">
+      <a href="../../../pl/infra-network/" class="md-nav__link">
         
   
   
@@ -2941,7 +2941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/infra-monitoring.md" class="md-nav__link">
+      <a href="../../../pl/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -2969,7 +2969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/infra-secrets.md" class="md-nav__link">
+      <a href="../../../pl/infra-secrets/" class="md-nav__link">
         
   
   
@@ -2997,7 +2997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/infra-k8s.md" class="md-nav__link">
+      <a href="../../../pl/infra-k8s/" class="md-nav__link">
         
   
   
@@ -3431,12 +3431,12 @@
   <a href="#aws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Пример среды разработки в AWS
+        Пример среды разработки AWS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Пример среды разработки в AWS">
+    <nav class="md-nav" aria-label="Пример среды разработки AWS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3477,13 +3477,13 @@
 
   <h1>AWS Dev</h1>
 
-<h2 id="aws">Пример среды разработки в AWS</h2>
-<p>Этот пример демонстрирует, как настроить полную среду разработки в AWS с использованием модулей <code>infra-core</code>.</p>
-<p>Он включает в себя:
+<h2 id="aws">Пример среды разработки AWS</h2>
+<p>Этот пример демонстрирует, как настроить полную среду разработки на AWS с использованием модулей <code>infra-core</code>.</p>
+<p>Он включает:
 - VPC с подсетями
-- Экземпляр EC2 (ВМ)
+- Экземпляр EC2 (VM)
 - Базу данных RDS MySQL
-- Интеграцию с Tailscale для безопасного доступа</p>
+- Интеграцию Tailscale для безопасного доступа</p>
 <h3 id="maintf">Конфигурация (<code>main.tf</code>)</h3>
 <pre><code class="language-hcl"># main.tf для примера aws-dev
 
@@ -3523,7 +3523,7 @@ module &quot;db&quot; {
   instance_class    = &quot;db.t2.micro&quot;
   db_name           = &quot;awsdevdb&quot;
   username          = &quot;user&quot;
-  password          = &quot;password&quot; # Замените на надежный пароль
+  password          = &quot;password&quot; # Замените на безопасный пароль
   tags = {
     Name = &quot;aws-dev-db&quot;
   }
