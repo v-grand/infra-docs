@@ -239,6 +239,8 @@ module "aws_secrets" {
         ]
       })
     }
+    
+    
   }
 }
 ```
@@ -419,3 +421,24 @@ module "monitoring" {
 - [infra-core](infra-core.md) - Модули инфраструктуры
 - [infra-aws](aws.md) - Интеграция AWS
 - [infra-gcp](gcp/index.md) - Интеграция GCP
+
+## Схема потоков данных: Секреты от Vault до приложения в Kubernetes
+
+```mermaid
+graph TD
+    subgraph "Управление секретами"
+        A[Vault] -- "Хранит секреты" --> B(Vault Agent / CSI Driver)
+    end
+
+    subgraph "Kubernetes"
+        B -- "Инжектирует секреты" --> C(Pod / Контейнер)
+        C -- "Использует секреты" --> D(Приложение)
+    end
+
+    subgraph "Разработчик / CI/CD"
+        E[Разработчик / CI/CD] -- "Записывает секреты" --> A
+    end
+
+    E -- "Запрашивает секреты" --> A
+    A -- "Предоставляет секреты" --> E
+```
