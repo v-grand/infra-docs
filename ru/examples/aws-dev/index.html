@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-development-environment-example" class="md-skip">
+        <a href="#aws" class="md-skip">
           Skip to content
         </a>
       
@@ -1111,22 +1111,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-development-environment-example" class="md-nav__link">
+  <a href="#aws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS Development Environment Example
+        Пример среды разработки в AWS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AWS Development Environment Example">
+    <nav class="md-nav" aria-label="Пример среды разработки в AWS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration-maintf" class="md-nav__link">
+  <a href="#maintf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration (main.tf)
+        Конфигурация (main.tf)
       
     </span>
   </a>
@@ -1268,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gcp/vm.md" class="md-nav__link">
+      <a href="../../gcp/vm/" class="md-nav__link">
         
   
   
@@ -1296,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gcp/db.md" class="md-nav__link">
+      <a href="../../gcp/db/" class="md-nav__link">
         
   
   
@@ -1324,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gcp/k8s.md" class="md-nav__link">
+      <a href="../../gcp/k8s/" class="md-nav__link">
         
   
   
@@ -1863,7 +1863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/gcp/vm.md" class="md-nav__link">
+      <a href="../../../pl/gcp/vm/" class="md-nav__link">
         
   
   
@@ -1891,7 +1891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/gcp/db.md" class="md-nav__link">
+      <a href="../../../pl/gcp/db/" class="md-nav__link">
         
   
   
@@ -1919,7 +1919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../pl/gcp/k8s.md" class="md-nav__link">
+      <a href="../../../pl/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -2206,22 +2206,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aws-development-environment-example" class="md-nav__link">
+  <a href="#aws" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS Development Environment Example
+        Пример среды разработки в AWS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="AWS Development Environment Example">
+    <nav class="md-nav" aria-label="Пример среды разработки в AWS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration-maintf" class="md-nav__link">
+  <a href="#maintf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration (main.tf)
+        Конфигурация (main.tf)
       
     </span>
   </a>
@@ -2255,15 +2255,15 @@
 
   <h1>AWS Dev</h1>
 
-<h2 id="aws-development-environment-example">AWS Development Environment Example</h2>
-<p>This example demonstrates how to set up a complete development environment on AWS using <code>infra-core</code> modules.</p>
-<p>It includes:
-- A VPC with subnets
-- An EC2 instance (VM)
-- An RDS MySQL database
-- Tailscale integration for secure access</p>
-<h3 id="configuration-maintf">Configuration (<code>main.tf</code>)</h3>
-<pre><code class="language-hcl"># main.tf for aws-dev example
+<h2 id="aws">Пример среды разработки в AWS</h2>
+<p>Этот пример демонстрирует, как настроить полную среду разработки в AWS с использованием модулей <code>infra-core</code>.</p>
+<p>Он включает в себя:
+- VPC с подсетями
+- Экземпляр EC2 (ВМ)
+- Базу данных RDS MySQL
+- Интеграцию с Tailscale для безопасного доступа</p>
+<h3 id="maintf">Конфигурация (<code>main.tf</code>)</h3>
+<pre><code class="language-hcl"># main.tf для примера aws-dev
 
 provider &quot;aws&quot; {
   region = &quot;us-east-1&quot;
@@ -2301,7 +2301,7 @@ module &quot;db&quot; {
   instance_class    = &quot;db.t2.micro&quot;
   db_name           = &quot;awsdevdb&quot;
   username          = &quot;user&quot;
-  password          = &quot;password&quot; # Replace with a secure password
+  password          = &quot;password&quot; # Замените на надежный пароль
   tags = {
     Name = &quot;aws-dev-db&quot;
   }
@@ -2311,9 +2311,9 @@ module &quot;tailscale&quot; {
   source = &quot;../../modules/tailscale&quot;
 
   instance_id      = module.vm.instance_id
-  auth_key         = &quot;your-tailscale-auth-key&quot; # Replace with your auth key
+  auth_key         = &quot;your-tailscale-auth-key&quot; # Замените на ваш ключ аутентификации
   ssh_user         = &quot;ec2-user&quot;
-  private_key_path = &quot;~/.ssh/id_rsa&quot; # Replace with your private key path
+  private_key_path = &quot;~/.ssh/id_rsa&quot; # Замените на путь к вашему приватному ключу
   host             = module.vm.public_ip
 }
 
