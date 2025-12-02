@@ -34,16 +34,40 @@ nav:
       - 'Terraform Demo': 'notebooks/terraform-demo.md'
   - 'ru':
     - 'Home': 'ru/index.md'
+    - 'Infra Core': 'ru/infra-core.md'
+    - 'Examples':
+      - 'AWS Dev': 'ru/examples/aws-dev.md'
     - 'AWS': 'ru/aws.md'
     - 'GCP': 
       - 'Home': 'ru/gcp/index.md'
+      - 'VM': 'ru/gcp/vm.md'
+      - 'DB': 'ru/gcp/db.md'
+      - 'K8s': 'ru/gcp/k8s.md'
     - 'Tailscale': 'ru/tailscale.md'
+    - 'Notebooks':
+      - 'Example': 'notebooks/example.md'
+      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
+      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
+      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
+      - 'Terraform Demo': 'notebooks/terraform-demo.md'
   - 'pl':
     - 'Home': 'pl/index.md'
+    - 'Infra Core': 'pl/infra-core.md'
+    - 'Examples':
+      - 'AWS Dev': 'pl/examples/aws-dev.md'
     - 'AWS': 'pl/aws.md'
     - 'GCP': 
       - 'Home': 'pl/gcp/index.md'
+      - 'VM': 'pl/gcp/vm.md'
+      - 'DB': 'pl/gcp/db.md'
+      - 'K8s': 'pl/gcp/k8s.md'
     - 'Tailscale': 'pl/tailscale.md'
+    - 'Notebooks':
+      - 'Example': 'notebooks/example.md'
+      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
+      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
+      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
+      - 'Terraform Demo': 'notebooks/terraform-demo.md'
 
 plugins:
   - search
@@ -54,3 +78,10 @@ plugins:
         ru: Русский
         pl: Polski
   # - jupyter
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - toc:
+      baselevel: 2
