@@ -37,11 +37,11 @@ nav:
     - 'Integrations':
       - 'Tailscale': 'en/tailscale.md'
     - 'Notebooks':
-      - 'Example': 'notebooks/example.md'
-      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
-      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
-      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
-      - 'Terraform Demo': 'notebooks/terraform-demo.md'
+      - 'Example': 'notebooks/example.ipynb'
+      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
+      - 'Infra Core Usage': 'notebooks/infra-core-usage.ipynb'
+      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.ipynb'
+      - 'Terraform Demo': 'notebooks/terraform-demo.ipynb'
   - 'ru':
     - 'Home': 'ru/index.md'
     - 'Core Libraries':
@@ -65,11 +65,11 @@ nav:
     - 'Integrations':
       - 'Tailscale': 'ru/tailscale.md'
     - 'Notebooks':
-      - 'Example': 'notebooks/example.md'
-      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
-      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
-      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
-      - 'Terraform Demo': 'notebooks/terraform-demo.md'
+      - 'Example': 'notebooks/example.ipynb'
+      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
+      - 'Infra Core Usage': 'notebooks/infra-core-usage.ipynb'
+      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.ipynb'
+      - 'Terraform Demo': 'notebooks/terraform-demo.ipynb'
   - 'pl':
     - 'Home': 'pl/index.md'
     - 'Core Libraries':
@@ -93,11 +93,11 @@ nav:
     - 'Integrations':
       - 'Tailscale': 'pl/tailscale.md'
     - 'Notebooks':
-      - 'Example': 'notebooks/example.md'
-      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.md'
-      - 'Infra Core Usage': 'notebooks/infra-core-usage.md'
-      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.md'
-      - 'Terraform Demo': 'notebooks/terraform-demo.md'
+      - 'Example': 'notebooks/example.ipynb'
+      - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
+      - 'Infra Core Usage': 'notebooks/infra-core-usage.ipynb'
+      - 'Tailscale Mesh': 'notebooks/tailscale-mesh.ipynb'
+      - 'Terraform Demo': 'notebooks/terraform-demo.ipynb'
 
 plugins:
   - search
@@ -107,7 +107,7 @@ plugins:
         en: English
         ru: Русский
         pl: Polski
-  # - jupyter
+  - mkdocs-jupyter
 
 markdown_extensions:
   - attr_list

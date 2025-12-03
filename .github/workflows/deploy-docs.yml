@@ -19,11 +19,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-i18n jupyter nbconvert
-      
-      - name: Convert Notebooks to Markdown
-        run: |
-          find . -name "*.ipynb" -print0 | xargs -0 -I {} jupyter nbconvert --to markdown --output-dir=$(dirname {}) {}
+          pip install mkdocs mkdocs-material mkdocs-i18n mkdocs-jupyter
 
       - name: Build MkDocs site
         run: mkdocs build
