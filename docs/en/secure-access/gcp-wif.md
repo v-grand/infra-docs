@@ -1,24 +1,24 @@
-# Безопасный доступ к GCP с помощью Workload Identity Federation
+# Secure GCP Access with Workload Identity Federation
 
-Этот метод является **рекомендуемым** для настройки CI/CD (например, GitHub Actions) и позволяет получить временные учетные данные GCP без необходимости хранить долгоживущие ключи сервисного аккаунта.
+This method is **recommended** for setting up CI/CD (e.g., GitHub Actions) and allows you to obtain temporary GCP credentials without needing to store long-lived service account keys.
 
-## Принцип работы
+## How It Works
 
-1.  **GitHub** генерирует уникальный OIDC токен для каждого запуска вашего workflow.
-2.  **GCP IAM** доверяет GitHub как провайдеру идентификации через Workload Identity Federation.
-3.  GitHub Action передает свой OIDC токен в GCP.
-4.  **GCP STS** проверяет токен и, если он валиден, выдает вашему workflow временные учетные данные для имперсонации указанного сервисного аккаунта.
+1.  **GitHub** generates a unique OIDC token for each run of your workflow.
+2.  **GCP IAM** trusts GitHub as an identity provider through Workload Identity Federation.
+3.  GitHub Action passes its OIDC token to GCP.
+4.  **GCP STS** validates the token and, if valid, issues temporary credentials to your workflow to impersonate the specified service account.
 
-## Пошаговая настройка
+## Step-by-Step Setup
 
-### Шаг 1: Включите необходимые API
+### Step 1: Enable Required APIs
 
 ```bash
 gcloud services enable iamcredentials.googleapis.com
 gcloud services enable sts.googleapis.com
 ```
 
-### Шаг 2: Создайте пул Workload Identity
+### Step 2: Create Workload Identity Pool
 
 ```bash
 gcloud iam workload-identity-pools create "github-pool" \
@@ -27,7 +27,7 @@ gcloud iam workload-identity-pools create "github-pool" \
   --display-name="GitHub Actions Pool"
 ```
 
-### Шаг 3: Создайте провайдера Workload Identity
+### Step 3: Create Workload Identity Provider
 
 ```bash
 gcloud iam workload-identity-pools providers create-oidc "github-provider" \
@@ -39,7 +39,7 @@ gcloud iam workload-identity-pools providers create-oidc "github-provider" \
   --issuer-uri="https://token.actions.githubusercontent.com"
 ```
 
-### Шаг 4: Создайте сервисный аккаунт
+### Step 4: Create Service Account
 
 ```bash
 gcloud iam service-accounts create github-actions-sa \
@@ -47,7 +47,7 @@ gcloud iam service-accounts create github-actions-sa \
   --display-name="GitHub Actions Service Account"
 ```
 
-Предоставьте необходимые права сервисному аккаунту:
+Grant necessary permissions to the service account:
 
 ```bash
 gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
@@ -55,7 +55,7 @@ gcloud projects add-iam-policy-binding YOUR_PROJECT_ID \
   --role="roles/editor"
 ```
 
-### Шаг 5: Разрешите пулу Workload Identity имперсонировать сервисный аккаунт
+### Step 5: Allow Workload Identity Pool to Impersonate Service Account
 
 ```bash
 gcloud iam service-accounts add-iam-policy-binding \
@@ -65,9 +65,9 @@ gcloud iam service-accounts add-iam-policy-binding \
   --member="principalSet://iam.googleapis.com/projects/PROJECT_NUMBER/locations/global/workloadIdentityPools/github-pool/attribute.repository/v-grand/YOUR_REPO"
 ```
 
-**Важно**: Замените `PROJECT_NUMBER` на номер вашего проекта GCP (не ID) и `v-grand/YOUR_REPO` на ваш репозиторий.
+**Important**: Replace `PROJECT_NUMBER` with your GCP project number (not ID) and `v-grand/YOUR_REPO` with your repository.
 
-### Шаг 6: Получите имя ресурса провайдера Workload Identity
+### Step 6: Get Workload Identity Provider Resource Name
 
 ```bash
 gcloud iam workload-identity-pools providers describe "github-provider" \
@@ -77,9 +77,9 @@ gcloud iam workload-identity-pools providers describe "github-provider" \
   --format="value(name)"
 ```
 
-Сохраните это значение - оно понадобится в вашем GitHub Actions workflow.
+Save this value - you'll need it in your GitHub Actions workflow.
 
-### Шаг 7: Обновите GitHub Actions Workflow
+### Step 7: Update GitHub Actions Workflow
 
 ```yaml
 name: Deploy to GCP via WIF
@@ -93,7 +93,7 @@ jobs:
     name: Deploy to GCP
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # Необходимо для получения OIDC токена
+      id-token: write # Required to obtain OIDC token
       contents: read
 
     steps:
@@ -113,4 +113,25 @@ jobs:
       run: gcloud info
 ```
 
-Теперь вам больше не нужны файлы ключей сервисного аккаунта в вашем репозитории!
+## Security Best Practices
+
+1. **Restrict by repository**: Use attribute conditions to limit access to specific repositories
+2. **Restrict by branch**: Add branch conditions in the attribute mapping
+3. **Least privilege**: Grant only necessary permissions to the service account
+4. **Audit logs**: Enable and monitor Cloud Audit Logs for service account usage
+
+## Troubleshooting
+
+### Error: "Permission denied"
+- Verify the service account has necessary permissions
+- Check that the workload identity pool binding is correct
+
+### Error: "Invalid token"
+- Ensure `id-token: write` permission is set in the workflow
+- Verify the issuer URI is correct
+
+### Error: "Workload identity pool not found"
+- Check that the pool and provider names match exactly
+- Verify the project ID and number are correct
+
+Now you no longer need service account key files in your repository!

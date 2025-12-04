@@ -32,13 +32,14 @@ nav:
       - 'Monitoring': 'en/infra-monitoring.md'
       - 'Secrets Management': 'en/infra-secrets.md'
       - 'Kubernetes': 'en/infra-k8s.md'
-    - 'Secure Access':
-      - 'AWS OIDC': 'en/secure-access/aws-oidc.md'
     - 'Examples':
       - 'AWS Dev': 'en/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'en/tailscale.md'
       - 'Infra Deployer': 'docs/infra-deployer.md'
+      - 'Secure Access':
+        - 'AWS OIDC': 'en/secure-access/aws-oidc.md'
+        - 'GCP WIF': 'en/secure-access/gcp-wif.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
@@ -63,15 +64,15 @@ nav:
       - 'Monitoring': 'ru/infra-monitoring.md'
       - 'Secrets Management': 'ru/infra-secrets.md'
       - 'Kubernetes': 'ru/infra-k8s.md'
-    - 'Безопасный доступ':
-      - 'AWS OIDC': 'ru/secure-access/aws-oidc.md'
-      - 'AWS Static Keys': 'ru/secure-access/aws-static-keys.md'
-      - 'GCP WIF': 'ru/secure-access/gcp-wif.md'
     - 'Examples':
       - 'AWS Dev': 'ru/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'ru/tailscale.md'
       - 'Infra Deployer': 'docs/infra-deployer.md'
+      - 'Безопасный доступ':
+        - 'AWS OIDC': 'ru/secure-access/aws-oidc.md'
+        - 'AWS Static Keys': 'ru/secure-access/aws-static-keys.md'
+        - 'GCP WIF': 'ru/secure-access/gcp-wif.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
@@ -96,13 +97,14 @@ nav:
       - 'Monitoring': 'pl/infra-monitoring.md'
       - 'Secrets Management': 'pl/infra-secrets.md'
       - 'Kubernetes': 'pl/infra-k8s.md'
-    - 'Bezpieczny dostęp':
-      - 'AWS OIDC': 'pl/secure-access/aws-oidc.md'
     - 'Examples':
       - 'AWS Dev': 'pl/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'pl/tailscale.md'
       - 'Infra Deployer': 'docs/infra-deployer.md'
+      - 'Bezpieczny dostęp':
+        - 'AWS OIDC': 'pl/secure-access/aws-oidc.md'
+        - 'GCP WIF': 'pl/secure-access/gcp-wif.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
