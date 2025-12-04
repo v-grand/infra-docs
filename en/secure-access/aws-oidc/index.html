@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../infra-network/">
+        <link rel="prev" href="../../infra-k8s/">
       
       
-        <link rel="next" href="../infra-secrets/">
+        <link rel="next" href="../../examples/aws-dev/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/logo.svg">
+      <link rel="icon" href="../../../assets/images/logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Monitoring - Infra Docs</title>
+        <title>AWS OIDC - Infra Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#infra-monitoring" class="md-skip">
+        <a href="#secure-aws-access-with-oidc" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Infra Docs" class="md-header__button md-logo" aria-label="Infra Docs" data-md-component="logo">
+    <a href="../../.." title="Infra Docs" class="md-header__button md-logo" aria-label="Infra Docs" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitoring
+              AWS OIDC
             
           </span>
         </div>
@@ -188,11 +188,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../en/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -208,8 +210,6 @@
   
   
   
-    
-  
   
     
     
@@ -217,13 +217,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../infra-core/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../ru/infra-core/" class="md-tabs__link">
           
   
   
@@ -253,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../pl/infra-core/" class="md-tabs__link">
+        <a href="../../../pl/infra-core/" class="md-tabs__link">
           
   
   
@@ -290,9 +288,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Infra Docs" class="md-nav__button md-logo" aria-label="Infra Docs" data-md-component="logo">
+    <a href="../../.." title="Infra Docs" class="md-nav__button md-logo" aria-label="Infra Docs" data-md-component="logo">
       
-  <img src="../../assets/images/logo.svg" alt="logo">
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     Infra Docs
@@ -316,24 +314,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -351,7 +354,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -369,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -447,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-core/" class="md-nav__link">
+      <a href="../../infra-core/" class="md-nav__link">
         
   
   
@@ -475,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-template/" class="md-nav__link">
+      <a href="../../infra-template/" class="md-nav__link">
         
   
   
@@ -503,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-ci/" class="md-nav__link">
+      <a href="../../infra-ci/" class="md-nav__link">
         
   
   
@@ -589,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/aws/" class="md-nav__link">
+      <a href="../../aws/" class="md-nav__link">
         
   
   
@@ -667,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/" class="md-nav__link">
+      <a href="../../gcp/" class="md-nav__link">
         
   
   
@@ -695,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/vm/" class="md-nav__link">
+      <a href="../../gcp/vm/" class="md-nav__link">
         
   
   
@@ -723,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/db/" class="md-nav__link">
+      <a href="../../gcp/db/" class="md-nav__link">
         
   
   
@@ -751,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/gcp/k8s/" class="md-nav__link">
+      <a href="../../gcp/k8s/" class="md-nav__link">
         
   
   
@@ -787,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-network/" class="md-nav__link">
+      <a href="../../infra-network/" class="md-nav__link">
         
   
   
@@ -873,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-monitoring/" class="md-nav__link">
+      <a href="../../infra-monitoring/" class="md-nav__link">
         
   
   
@@ -901,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-secrets/" class="md-nav__link">
+      <a href="../../infra-secrets/" class="md-nav__link">
         
   
   
@@ -929,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/infra-k8s/" class="md-nav__link">
+      <a href="../../infra-k8s/" class="md-nav__link">
         
   
   
@@ -962,6 +965,8 @@
                 
   
   
+    
+  
   
   
     
@@ -972,11 +977,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
         
           
           <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
@@ -997,7 +1002,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1012,10 +1017,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../en/secure-access/aws-oidc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS OIDC
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1031,6 +1061,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#secure-aws-access-with-oidc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure AWS Access with OIDC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Secure AWS Access with OIDC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-configure-identity-provider-in-aws-iam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Configure Identity Provider in AWS IAM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-iam-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Create IAM Role
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-configure-trust-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Configure Trust Policy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-update-github-actions-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Update GitHub Actions Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1101,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/examples/aws-dev/" class="md-nav__link">
+      <a href="../../examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -1187,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/tailscale/" class="md-nav__link">
+      <a href="../../tailscale/" class="md-nav__link">
         
   
   
@@ -1215,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+      <a href="../../../docs/infra-deployer.md" class="md-nav__link">
         
   
   
@@ -1301,7 +1438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/example/" class="md-nav__link">
+      <a href="../../../notebooks/example/" class="md-nav__link">
         
   
   
@@ -1329,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/ci-cd-pipeline/" class="md-nav__link">
+      <a href="../../../notebooks/ci-cd-pipeline/" class="md-nav__link">
         
   
   
@@ -1357,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/infra-core-usage/" class="md-nav__link">
+      <a href="../../../notebooks/infra-core-usage/" class="md-nav__link">
         
   
   
@@ -1385,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/tailscale-mesh/" class="md-nav__link">
+      <a href="../../../notebooks/tailscale-mesh/" class="md-nav__link">
         
   
   
@@ -1413,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/terraform-demo/" class="md-nav__link">
+      <a href="../../../notebooks/terraform-demo/" class="md-nav__link">
         
   
   
@@ -1453,29 +1590,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -1493,7 +1625,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1561,7 +1693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-core/" class="md-nav__link">
+      <a href="../../../ru/infra-core/" class="md-nav__link">
         
   
   
@@ -1589,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-template/" class="md-nav__link">
+      <a href="../../../ru/infra-template/" class="md-nav__link">
         
   
   
@@ -1617,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-ci/" class="md-nav__link">
+      <a href="../../../ru/infra-ci/" class="md-nav__link">
         
   
   
@@ -1703,7 +1835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws/" class="md-nav__link">
+      <a href="../../../ru/aws/" class="md-nav__link">
         
   
   
@@ -1781,7 +1913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/" class="md-nav__link">
+      <a href="../../../ru/gcp/" class="md-nav__link">
         
   
   
@@ -1809,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/vm/" class="md-nav__link">
+      <a href="../../../ru/gcp/vm/" class="md-nav__link">
         
   
   
@@ -1837,7 +1969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/db/" class="md-nav__link">
+      <a href="../../../ru/gcp/db/" class="md-nav__link">
         
   
   
@@ -1865,7 +1997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gcp/k8s/" class="md-nav__link">
+      <a href="../../../ru/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -1901,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-network/" class="md-nav__link">
+      <a href="../../../ru/infra-network/" class="md-nav__link">
         
   
   
@@ -1934,8 +2066,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1946,11 +2076,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -1971,7 +2101,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1986,35 +2116,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Monitoring
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../ru/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -2030,396 +2135,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#infra-monitoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        infra-monitoring: Стек наблюдаемости
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="infra-monitoring: Стек наблюдаемости">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 Назначение
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📁 Структура репозитория
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📊 Компоненты
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📊 Компоненты">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-prometheus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Prometheus
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-grafana" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Grafana
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-loki" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Loki
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Экспортеры
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Быстрый старт
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Быстрый старт">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Локальная разработка с Docker Compose
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#production-terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Развертывание в production с Terraform
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📈 Дашборды Grafana
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📈 Дашборды Grafana">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Дашборд обзора инфраструктуры
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Дашборд производительности приложений
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Дашборд Kubernetes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Дашборд мониторинга затрат
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔔 Правила оповещений
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔔 Правила оповещений">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Пример правил оповещений
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alertmanager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Конфигурация AlertManager
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 Примеры интеграции
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔗 Примеры интеграции">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#infra-aws" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        С infra-aws
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#infra-k8s" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        С infra-k8s
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#infra-gcp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        С infra-gcp
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛡️ Конфигурация безопасности
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛡️ Конфигурация безопасности">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Аутентификация
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tlsssl" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TLS/SSL
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 Лучшие практики
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 Документация
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 Связанные репозитории
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Схема потоков данных: Сбор логов от приложения до Grafana
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2432,7 +2147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-secrets/" class="md-nav__link">
+      <a href="../../../ru/infra-secrets/" class="md-nav__link">
         
   
   
@@ -2460,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../infra-k8s/" class="md-nav__link">
+      <a href="../../../ru/infra-k8s/" class="md-nav__link">
         
   
   
@@ -2546,7 +2261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-access/aws-oidc.md" class="md-nav__link">
+      <a href="../../../ru/secure-access/aws-oidc.md" class="md-nav__link">
         
   
   
@@ -2574,7 +2289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-access/aws-static-keys.md" class="md-nav__link">
+      <a href="../../../ru/secure-access/aws-static-keys.md" class="md-nav__link">
         
   
   
@@ -2602,7 +2317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../secure-access/gcp-wif.md" class="md-nav__link">
+      <a href="../../../ru/secure-access/gcp-wif.md" class="md-nav__link">
         
   
   
@@ -2688,7 +2403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/aws-dev/" class="md-nav__link">
+      <a href="../../../ru/examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -2774,7 +2489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tailscale/" class="md-nav__link">
+      <a href="../../../ru/tailscale/" class="md-nav__link">
         
   
   
@@ -2802,7 +2517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+      <a href="../../../docs/infra-deployer.md" class="md-nav__link">
         
   
   
@@ -2888,7 +2603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/example/" class="md-nav__link">
+      <a href="../../../notebooks/example/" class="md-nav__link">
         
   
   
@@ -2916,7 +2631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/ci-cd-pipeline/" class="md-nav__link">
+      <a href="../../../notebooks/ci-cd-pipeline/" class="md-nav__link">
         
   
   
@@ -2944,7 +2659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/infra-core-usage/" class="md-nav__link">
+      <a href="../../../notebooks/infra-core-usage/" class="md-nav__link">
         
   
   
@@ -2972,7 +2687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/tailscale-mesh/" class="md-nav__link">
+      <a href="../../../notebooks/tailscale-mesh/" class="md-nav__link">
         
   
   
@@ -3000,7 +2715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/terraform-demo/" class="md-nav__link">
+      <a href="../../../notebooks/terraform-demo/" class="md-nav__link">
         
   
   
@@ -3143,7 +2858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-core/" class="md-nav__link">
+      <a href="../../../pl/infra-core/" class="md-nav__link">
         
   
   
@@ -3171,7 +2886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-template/" class="md-nav__link">
+      <a href="../../../pl/infra-template/" class="md-nav__link">
         
   
   
@@ -3199,7 +2914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-ci/" class="md-nav__link">
+      <a href="../../../pl/infra-ci/" class="md-nav__link">
         
   
   
@@ -3285,7 +3000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/aws/" class="md-nav__link">
+      <a href="../../../pl/aws/" class="md-nav__link">
         
   
   
@@ -3363,7 +3078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/" class="md-nav__link">
+      <a href="../../../pl/gcp/" class="md-nav__link">
         
   
   
@@ -3391,7 +3106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/vm/" class="md-nav__link">
+      <a href="../../../pl/gcp/vm/" class="md-nav__link">
         
   
   
@@ -3419,7 +3134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/db/" class="md-nav__link">
+      <a href="../../../pl/gcp/db/" class="md-nav__link">
         
   
   
@@ -3447,7 +3162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/gcp/k8s/" class="md-nav__link">
+      <a href="../../../pl/gcp/k8s/" class="md-nav__link">
         
   
   
@@ -3483,7 +3198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-network/" class="md-nav__link">
+      <a href="../../../pl/infra-network/" class="md-nav__link">
         
   
   
@@ -3569,7 +3284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-monitoring/" class="md-nav__link">
+      <a href="../../../pl/infra-monitoring/" class="md-nav__link">
         
   
   
@@ -3597,7 +3312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-secrets/" class="md-nav__link">
+      <a href="../../../pl/infra-secrets/" class="md-nav__link">
         
   
   
@@ -3625,7 +3340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/infra-k8s/" class="md-nav__link">
+      <a href="../../../pl/infra-k8s/" class="md-nav__link">
         
   
   
@@ -3711,7 +3426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/secure-access/aws-oidc.md" class="md-nav__link">
+      <a href="../../../pl/secure-access/aws-oidc.md" class="md-nav__link">
         
   
   
@@ -3797,7 +3512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/examples/aws-dev/" class="md-nav__link">
+      <a href="../../../pl/examples/aws-dev/" class="md-nav__link">
         
   
   
@@ -3883,7 +3598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pl/tailscale/" class="md-nav__link">
+      <a href="../../../pl/tailscale/" class="md-nav__link">
         
   
   
@@ -3911,7 +3626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../docs/infra-deployer.md" class="md-nav__link">
+      <a href="../../../docs/infra-deployer.md" class="md-nav__link">
         
   
   
@@ -3997,7 +3712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/example/" class="md-nav__link">
+      <a href="../../../notebooks/example/" class="md-nav__link">
         
   
   
@@ -4025,7 +3740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/ci-cd-pipeline/" class="md-nav__link">
+      <a href="../../../notebooks/ci-cd-pipeline/" class="md-nav__link">
         
   
   
@@ -4053,7 +3768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/infra-core-usage/" class="md-nav__link">
+      <a href="../../../notebooks/infra-core-usage/" class="md-nav__link">
         
   
   
@@ -4081,7 +3796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/tailscale-mesh/" class="md-nav__link">
+      <a href="../../../notebooks/tailscale-mesh/" class="md-nav__link">
         
   
   
@@ -4109,7 +3824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notebooks/terraform-demo/" class="md-nav__link">
+      <a href="../../../notebooks/terraform-demo/" class="md-nav__link">
         
   
   
@@ -4170,22 +3885,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#infra-monitoring" class="md-nav__link">
+  <a href="#secure-aws-access-with-oidc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        infra-monitoring: Стек наблюдаемости
+        Secure AWS Access with OIDC
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="infra-monitoring: Стек наблюдаемости">
+    <nav class="md-nav" aria-label="Secure AWS Access with OIDC">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Назначение
+        How It Works
       
     </span>
   </a>
@@ -4193,33 +3908,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#step-by-step-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📁 Структура репозитория
+        Step-by-Step Setup
       
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📊 Компоненты
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📊 Компоненты">
+    <nav class="md-nav" aria-label="Step-by-Step Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prometheus" class="md-nav__link">
+  <a href="#step-1-configure-identity-provider-in-aws-iam" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Prometheus
+        Step 1: Configure Identity Provider in AWS IAM
       
     </span>
   </a>
@@ -4227,10 +3931,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-grafana" class="md-nav__link">
+  <a href="#step-2-create-iam-role" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Grafana
+        Step 2: Create IAM Role
       
     </span>
   </a>
@@ -4238,10 +3942,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-loki" class="md-nav__link">
+  <a href="#step-3-configure-trust-policy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Loki
+        Step 3: Configure Trust Policy
       
     </span>
   </a>
@@ -4249,10 +3953,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#step-4-update-github-actions-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Экспортеры
+        Step 4: Update GitHub Actions Workflow
       
     </span>
   </a>
@@ -4261,278 +3965,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Быстрый старт
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Быстрый старт">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Локальная разработка с Docker Compose
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#production-terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Развертывание в production с Terraform
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📈 Дашборды Grafana
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📈 Дашборды Grafana">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Дашборд обзора инфраструктуры
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Дашборд производительности приложений
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Дашборд Kubernetes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Дашборд мониторинга затрат
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔔 Правила оповещений
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔔 Правила оповещений">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Пример правил оповещений
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#alertmanager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Конфигурация AlertManager
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 Примеры интеграции
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔗 Примеры интеграции">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#infra-aws" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        С infra-aws
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#infra-k8s" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        С infra-k8s
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#infra-gcp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        С infra-gcp
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛡️ Конфигурация безопасности
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛡️ Конфигурация безопасности">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Аутентификация
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tlsssl" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TLS/SSL
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 Лучшие практики
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 Документация
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 Связанные репозитории
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grafana_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Схема потоков данных: Сбор логов от приложения до Grafana
-      
-    </span>
-  </a>
   
 </li>
         
@@ -4561,363 +3993,99 @@
   
 
 
-  <h1>Monitoring</h1>
+  <h1>AWS OIDC</h1>
 
-<h2 id="infra-monitoring">infra-monitoring: Стек наблюдаемости</h2>
-<p><strong>infra-monitoring</strong> предоставляет комплексное решение для наблюдаемости сбора метрик, логирования и визуализации для облачной инфраструктуры.</p>
-<h3 id="_1">🎯 Назначение</h3>
-<p>Развертывание и управление комплексным стеком мониторинга:</p>
-<ul>
-<li><strong>Prometheus</strong> - Сбор метрик и оповещения</li>
-<li><strong>Grafana</strong> - Визуализация и дашборды</li>
-<li><strong>Loki</strong> - Агрегация и запрос логов</li>
-<li><strong>Экспортеры</strong> - Метрики узлов, облака и приложений</li>
-</ul>
-<h3 id="_2">📁 Структура репозитория</h3>
-<pre><code>infra-monitoring/
-├── modules/
-│   ├── prometheus/         # Настройка Prometheus
-│   ├── grafana/            # Grafana с дашбордами
-│   ├── loki/               # Агрегация логов Loki
-│   └── exporters/          # Различные экспортеры
-├── environments/
-│   ├── dev/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── terraform.tfvars.example
-│   │   └── backend.tf
-│   └── prod/
-│       └── ...
-├── dashboards/             # Предварительно настроенные дашборды Grafana
-├── alert_rules.yml         # Правила оповещений Prometheus
-├── docker-compose.yml      # Настройка для локальной разработки
-└── README.md
-</code></pre>
-<h3 id="_3">📊 Компоненты</h3>
-<h4 id="1-prometheus">1. Prometheus</h4>
-<p>База данных временных рядов метрик с мощными возможностями запросов и оповещений.</p>
-<p><strong>Возможности:</strong>
-- Многомерные метрики
-- Язык запросов PromQL
-- Интеграция с Alertmanager
-- Обнаружение сервисов
-- Долгосрочное хранение</p>
-<p><strong>Пример конфигурации:</strong></p>
-<pre><code class="language-yaml"># prometheus.yml
-global:
-  scrape_interval: 15s
-  evaluation_interval: 15s
-
-scrape_configs:
-  - job_name: 'prometheus'
-    static_configs:
-      - targets: ['localhost:9090']
-
-  - job_name: 'node-exporter'
-    static_configs:
-      - targets: ['node-exporter:9100']
-
-  - job_name: 'gcp-monitoring'
-    static_configs:
-      - targets: ['gcp-exporter:9090']
-</code></pre>
-<h4 id="2-grafana">2. Grafana</h4>
-<p>Платформа для визуализации и аналитики.</p>
-<p><strong>Возможности:</strong>
-- Богатые дашборды
-- Несколько источников данных
-- Оповещения
-- Управление пользователями
-- Версионирование дашбордов</p>
-<p><strong>Предварительно настроенные дашборды:</strong>
-- <strong>Обзор инфраструктуры</strong> - CPU, память, диск, сеть
-- <strong>Метрики приложений</strong> - Скорость запросов, задержки, ошибки
-- <strong>Мониторинг Kubernetes</strong> - Метрики подов/узлов
-- <strong>Производительность базы данных</strong> - Производительность запросов, соединения
-- <strong>Облачные расходы</strong> - Отслеживание и оптимизация затрат</p>
-<h4 id="3-loki">3. Loki</h4>
-<p>Горизонтально масштабируемая система агрегации логов.</p>
-<p><strong>Возможности:</strong>
-- Индексирование на основе меток
-- Язык запросов LogQL
-- Интеграция с Grafana
-- Низкозатратное хранение
-- Агент Promtail</p>
-<p><strong>Пример конфигурации:</strong></p>
-<pre><code class="language-yaml"># loki-config.yaml
-auth_enabled: false
-
-server:
-  http_listen_port: 3100
-
-ingester:
-  lifecycler:
-    address: 127.0.0.1
-    ring:
-      kvstore:
-        store: inmemory
-      replication_factor: 1
-  chunk_idle_period: 5m
-  chunk_retain_period: 30s
-
-schema_config:
-  configs:
-    - from: 2020-10-24
-      store: boltdb
-      object_store: filesystem
-      schema: v11
-      index:
-        prefix: index_
-        period: 168h
-</code></pre>
-<h4 id="4">4. Экспортеры</h4>
-<p>Сбор метрик из различных источников.</p>
-<p><strong>Доступные экспортеры:</strong>
-- <strong>Node Exporter</strong> - Системные метрики (CPU, память, диск)
-- <strong>cAdvisor</strong> - Метрики контейнеров
-- <strong>Blackbox Exporter</strong> - Мониторинг конечных точек
-- <strong>Облачные экспортеры</strong> - AWS CloudWatch, GCP Monitoring
-- <strong>Экспортеры баз данных</strong> - PostgreSQL, MySQL, Redis</p>
-<h3 id="_4">🚀 Быстрый старт</h3>
-<h4 id="docker-compose">Локальная разработка с Docker Compose</h4>
-<pre><code class="language-bash"># Клонируйте репозиторий
-git clone https://github.com/v-grand/infra-monitoring.git
-cd infra-monitoring
-
-# Настройте окружение
-cp .env.example .env
-# Отредактируйте .env с вашими настройками
-
-# Запустите стек
-docker-compose up -d
-
-# Доступ к сервисам
-# Grafana: http://localhost:3000 (admin/admin)
-# Prometheus: http://localhost:9090
-# Loki: http://localhost:3100
-</code></pre>
-<h4 id="production-terraform">Развертывание в production с Terraform</h4>
-<pre><code class="language-bash">cd environments/prod
-cp terraform.tfvars.example terraform.tfvars
-
-# Отредактируйте terraform.tfvars
-terraform init
-terraform plan
-terraform apply
-</code></pre>
-<h3 id="grafana">📈 Дашборды Grafana</h3>
-<h4 id="1">1. Дашборд обзора инфраструктуры</h4>
-<p>Мониторинг общего состояния инфраструктуры:
-- Использование CPU на всех экземплярах
-- Использование памяти
-- Ввод/вывод диска и емкость
-- Сетевой трафик
-- Средняя загрузка системы</p>
-<p><strong>ID импорта:</strong> <code>1860</code> (Node Exporter Full)</p>
-<h4 id="2">2. Дашборд производительности приложений</h4>
-<p>Отслеживание метрик приложений:
-- Скорость запросов и задержка
-- Частота ошибок (4xx, 5xx)
-- Производительность запросов к базе данных
-- Коэффициенты попадания в кэш
-- Глубина очередей</p>
-<h4 id="3-kubernetes">3. Дашборд Kubernetes</h4>
-<p>Мониторинг кластера Kubernetes:
-- Состояние и ресурсы узлов
-- Здоровье подов и перезапуски
-- Состояние развертывания
-- Квоты ресурсов
-- Использование постоянных томов</p>
-<p><strong>ID импорта:</strong> <code>15759</code> (Мониторинг кластера Kubernetes)</p>
-<h4 id="4_1">4. Дашборд мониторинга затрат</h4>
-<p>Отслеживание облачных расходов:
-- Ежедневные/ежемесячные расходы по сервисам
-- Использование ресурсов по сравнению с затратами
-- Прогнозы затрат
-- Оповещения о бюджете</p>
-<h3 id="_5">🔔 Правила оповещений</h3>
-<h4 id="_6">Пример правил оповещений</h4>
-<pre><code class="language-yaml"># alert_rules.yml
-groups:
-  - name: infrastructure_alerts
-    interval: 30s
-    rules:
-      - alert: HighCPUUsage
-        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode=&quot;idle&quot;}[5m])) * 100) &gt; 80
-        for: 5m
-        labels:
-          severity: warning
-        annotations:
-          summary: &quot;Высокая загрузка CPU на {{ $labels.instance }}&quot;
-          description: &quot;Загрузка CPU превышает 80% (текущее значение: {{ $value }}%)&quot;
-
-      - alert: HighMemoryUsage
-        expr: (node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100 &gt; 90
-        for: 5m
-        labels:
-          severity: critical
-        annotations:
-          summary: &quot;Высокое использование памяти на {{ $labels.instance }}&quot;
-          description: &quot;Использование памяти превышает 90% (текущее значение: {{ $value }}%)&quot;
-
-      - alert: DiskSpaceLow
-        expr: (node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 &lt; 10
-        for: 5m
-        labels:
-          severity: warning
-        annotations:
-          summary: &quot;Мало места на диске на {{ $labels.instance }}&quot;
-          description: &quot;Место на диске меньше 10% (текущее значение: {{ $value }}%)&quot;
-
-      - alert: ServiceDown
-        expr: up == 0
-        for: 2m
-        labels:
-          severity: critical
-        annotations:
-          summary: &quot;Сервис {{ $labels.job }} не работает&quot;
-          description: &quot;{{ $labels.instance }} не работает более 2 минут&quot;
-</code></pre>
-<h4 id="alertmanager">Конфигурация AlertManager</h4>
-<pre><code class="language-yaml"># alertmanager.yml
-global:
-  resolve_timeout: 5m
-
-route:
-  group_by: ['alertname', 'cluster', 'service']
-  group_wait: 10s
-  group_interval: 10s
-  repeat_interval: 12h
-  receiver: 'default'
-  routes:
-    - match:
-        severity: critical
-      receiver: 'critical-alerts'
-    - match:
-        severity: warning
-      receiver: 'warning-alerts'
-
-receivers:
-  - name: 'default'
-    slack_configs:
-      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
-        channel: '#alerts'
-
-  - name: 'critical-alerts'
-    slack_configs:
-      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
-        channel: '#critical-alerts'
-    pagerduty_configs:
-      - service_key: 'YOUR_PAGERDUTY_KEY'
-
-  - name: 'warning-alerts'
-    slack_configs:
-      - api_url: 'YOUR_SLACK_WEBHOOK_URL'
-        channel: '#warnings'
-</code></pre>
-<h3 id="_7">🔗 Примеры интеграции</h3>
-<h4 id="infra-aws">С infra-aws</h4>
-<pre><code class="language-hcl"># Развертывание мониторинга в AWS
-module &quot;monitoring&quot; {
-  source = &quot;github.com/v-grand/infra-monitoring//modules/prometheus&quot;
-
-  vpc_id    = module.vpc.vpc_id
-  subnet_id = module.vpc.private_subnet_ids[0]
-
-  instance_type = &quot;t3.medium&quot;
-
-  scrape_targets = [
-    &quot;http://app-server-1:9100&quot;,
-    &quot;http://app-server-2:9100&quot;
-  ]
-}
-</code></pre>
-<h4 id="infra-k8s">С infra-k8s</h4>
-<pre><code class="language-hcl"># Развертывание в Kubernetes
-module &quot;prometheus_helm&quot; {
-  source = &quot;github.com/v-grand/infra-monitoring//modules/prometheus&quot;
-
-  deploy_to_k8s = true
-  namespace      = &quot;monitoring&quot;
-
-  storage_class = &quot;standard&quot;
-  storage_size  = &quot;50Gi&quot;
-
-  grafana_enabled     = true
-  alertmanager_enabled = true
-}
-</code></pre>
-<h4 id="infra-gcp">С infra-gcp</h4>
-<pre><code class="language-hcl"># Интеграция с мониторингом GCP
-module &quot;gcp_monitoring&quot; {
-  source = &quot;github.com/v-grand/infra-monitoring//modules/gcp-exporter&quot;
-
-  project_id = var.gcp_project_id
-
-  export_metrics = [
-    &quot;compute.googleapis.com/instance/cpu/utilization&quot;,
-    &quot;compute.googleapis.com/instance/network/received_bytes_count&quot;
-  ]
-}
-</code></pre>
-<h3 id="_8">🛡️ Конфигурация безопасности</h3>
-<h4 id="_9">Аутентификация</h4>
-<pre><code class="language-hcl"># Аутентификация Grafana
-environment = {
-  GF_AUTH_GENERIC_OAUTH_ENABLED      = &quot;true&quot;
-  GF_AUTH_GENERIC_OAUTH_CLIENT_ID    = var.oauth_client_id
-  GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET = var.oauth_client_secret
-  GF_AUTH_GENERIC_OAUTH_SCOPES       = &quot;openid email profile&quot;
-}
-</code></pre>
-<h4 id="tlsssl">TLS/SSL</h4>
-<pre><code class="language-yaml"># Prometheus с TLS
-tls_config:
-  cert_file: /etc/prometheus/certs/prometheus.crt
-  key_file: /etc/prometheus/certs/prometheus.key
-  client_ca_file: /etc/prometheus/certs/ca.crt
-</code></pre>
-<h3 id="_10">📚 Лучшие практики</h3>
+<h2 id="secure-aws-access-with-oidc">Secure AWS Access with OIDC</h2>
+<p>This method is <strong>recommended</strong> for setting up CI/CD (e.g., GitHub Actions) and allows you to obtain temporary AWS credentials without needing to store long-lived <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code> in secrets.</p>
+<h3 id="how-it-works">How It Works</h3>
 <ol>
-<li><strong>Политики хранения</strong> - Настройте соответствующие политики хранения данных</li>
-<li><strong>Высокая доступность</strong> - Разверните избыточные экземпляры Prometheus</li>
-<li><strong>Хранилище</strong> - Используйте постоянные тома для данных</li>
-<li><strong>Интервалы сбора</strong> - Баланс между детализацией и нагрузкой</li>
-<li><strong>Кардинальность меток</strong> - Избегайте меток с высокой кардинальностью</li>
-<li><strong>Организация дашбордов</strong> - Используйте папки и теги</li>
+<li><strong>GitHub</strong> generates a unique OIDC token for each run of your workflow.</li>
+<li><strong>AWS IAM</strong> trusts GitHub as an identity provider.</li>
+<li>GitHub Action passes its OIDC token to AWS.</li>
+<li><strong>AWS STS</strong> (Security Token Service) validates the token and, if valid, issues temporary credentials to your workflow to assume the specified role.</li>
 </ol>
-<h3 id="_11">📖 Документация</h3>
-<ul>
-<li><a href="https://prometheus.io/docs/">Документация Prometheus</a></li>
-<li><a href="https://grafana.com/docs/">Документация Grafana</a></li>
-<li><a href="https://grafana.com/docs/loki/">Документация Loki</a></li>
-</ul>
-<h3 id="_12">🔗 Связанные репозитории</h3>
-<ul>
-<li><a href="../infra-core/">infra-core</a> - Модули инфраструктуры</li>
-<li><a href="https://github.com/v-grand/infra-k8s">infra-k8s</a> - Интеграция Kubernetes</li>
-<li><a href="../infra-network/">infra-network</a> - Конфигурация сети</li>
-</ul>
-<h3 id="grafana_1">Схема потоков данных: Сбор логов от приложения до Grafana</h3>
-<pre><code class="language-mermaid">graph TD
-    subgraph &quot;Приложение&quot;
-        A[Приложение] -- &quot;Генерирует логи&quot; --&gt; B(stdout/stderr)
-    end
+<h3 id="step-by-step-setup">Step-by-Step Setup</h3>
+<h4 id="step-1-configure-identity-provider-in-aws-iam">Step 1: Configure Identity Provider in AWS IAM</h4>
+<ol>
+<li>Open the AWS console and navigate to the <strong>IAM</strong> service.</li>
+<li>In the left menu, select <strong>Identity providers</strong>.</li>
+<li>Click <strong>"Add provider"</strong>.</li>
+<li>Select provider type <strong>"OpenID Connect"</strong>.</li>
+<li>In the <strong>Provider URL</strong> field, enter <code>https://token.actions.githubusercontent.com</code>.</li>
+<li>Click <strong>"Get thumbprint"</strong> to allow AWS to automatically retrieve the certificate thumbprint.</li>
+<li>In the <strong>Audience</strong> field, enter <code>sts.amazonaws.com</code>.</li>
+<li>Click <strong>"Add provider"</strong>.</li>
+</ol>
+<h4 id="step-2-create-iam-role">Step 2: Create IAM Role</h4>
+<ol>
+<li>In IAM, navigate to <strong>Roles</strong> and click <strong>"Create role"</strong>.</li>
+<li>For "Trusted entity type", select <strong>"Web identity"</strong>.</li>
+<li>In the <strong>Identity provider</strong> dropdown, select the provider you created in the previous step (<code>token.actions.githubusercontent.com</code>).</li>
+<li>In the <strong>Audience</strong> field, select <code>sts.amazonaws.com</code>.</li>
+<li>Click <strong>"Next"</strong>.</li>
+<li>On the next step, attach the necessary permission policies (e.g., <code>AdministratorAccess</code> for testing or more granular permissions for production).</li>
+<li>Give the role a name, for example, <code>GitHubActionsRole</code>.</li>
+</ol>
+<h4 id="step-3-configure-trust-policy">Step 3: Configure Trust Policy</h4>
+<ol>
+<li>Open the role you created and go to the <strong>"Trust relationships"</strong> tab.</li>
+<li>Click <strong>"Edit trust policy"</strong>.</li>
+<li>
+<p>Modify the <code>Condition</code> to restrict access only to your repository and branch. This is a <strong>critical security step</strong>.</p>
+<p>Example for repository <code>v-grand/my-project</code> and branch <code>main</code>:</p>
+<p><code>json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Federated": "arn:aws:iam::YOUR_AWS_ACCOUNT_ID:oidc-provider/token.actions.githubusercontent.com"
+            },
+            "Action": "sts:AssumeRoleWithWebIdentity",
+            "Condition": {
+                "StringEquals": {
+                    "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+                },
+                "StringLike": {
+                    "token.actions.githubusercontent.com:sub": "repo:v-grand/my-project:ref:refs/heads/main"
+                }
+            }
+        }
+    ]
+}</code>
+<strong>Don't forget to replace <code>YOUR_AWS_ACCOUNT_ID</code> and <code>v-grand/my-project:ref:refs/heads/main</code> with your values!</strong></p>
+</li>
+</ol>
+<h4 id="step-4-update-github-actions-workflow">Step 4: Update GitHub Actions Workflow</h4>
+<p>Now update your <code>.github/workflows/deploy-aws.yml</code> to use this role.</p>
+<pre><code class="language-yaml">name: Deploy to AWS via OIDC
 
-    subgraph &quot;Сбор логов&quot;
-        B -- &quot;Собирает логи&quot; --&gt; C(Promtail Agent)
-        C -- &quot;Отправляет логи&quot; --&gt; D(Loki)
-    end
+# ...
 
-    subgraph &quot;Визуализация&quot;
-        D -- &quot;Хранит и индексирует логи&quot; --&gt; E(Grafana)
-        E -- &quot;Запрашивает и отображает логи&quot; --&gt; F[Пользователь]
-    end
+jobs:
+  deploy:
+    name: Deploy to AWS
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Required to obtain OIDC token
+      contents: read
 
-    A -- &quot;Метрики&quot; --&gt; G(Prometheus Exporter)
-    G -- &quot;Скрапинг метрик&quot; --&gt; H(Prometheus)
-    H -- &quot;Запрашивает и отображает метрики&quot; --&gt; E
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: arn:aws:iam::YOUR_AWS_ACCOUNT_ID:role/GitHubActionsRole # Replace with your role ARN
+        aws-region: us-east-1
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+      # ...
 </code></pre>
+<p>Now you no longer need <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code> secrets in your repository!</p>
 
 
 
@@ -4967,10 +4135,10 @@ tls_config:
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
