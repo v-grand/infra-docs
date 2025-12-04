@@ -22,7 +22,7 @@ nav:
       - 'Infra CI': 'en/infra-ci.md'
     - 'Cloud Infrastructure':
       - 'AWS': 'en/aws.md'
-      - 'GCP': 
+      - 'GCP':
         - 'Home': 'en/gcp/index.md'
         - 'VM': 'en/gcp/vm.md'
         - 'DB': 'en/gcp/db.md'
@@ -36,6 +36,7 @@ nav:
       - 'AWS Dev': 'en/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'en/tailscale.md'
+      - 'Infra Deployer': 'docs/infra-deployer.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
@@ -50,7 +51,7 @@ nav:
       - 'Infra CI': 'ru/infra-ci.md'
     - 'Cloud Infrastructure':
       - 'AWS': 'ru/aws.md'
-      - 'GCP': 
+      - 'GCP':
         - 'Home': 'ru/gcp/index.md'
         - 'VM': 'ru/gcp/vm.md'
         - 'DB': 'ru/gcp/db.md'
@@ -64,6 +65,7 @@ nav:
       - 'AWS Dev': 'ru/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'ru/tailscale.md'
+      - 'Infra Deployer': 'docs/infra-deployer.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
@@ -78,7 +80,7 @@ nav:
       - 'Infra CI': 'pl/infra-ci.md'
     - 'Cloud Infrastructure':
       - 'AWS': 'pl/aws.md'
-      - 'GCP': 
+      - 'GCP':
         - 'Home': 'pl/gcp/index.md'
         - 'VM': 'pl/gcp/vm.md'
         - 'DB': 'pl/gcp/db.md'
@@ -92,6 +94,7 @@ nav:
       - 'AWS Dev': 'pl/examples/aws-dev.md'
     - 'Integrations':
       - 'Tailscale': 'pl/tailscale.md'
+      - 'Infra Deployer': 'docs/infra-deployer.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
       - 'CI/CD Pipeline': 'notebooks/ci-cd-pipeline.ipynb'
