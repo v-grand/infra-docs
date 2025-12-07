@@ -1,6 +1,3 @@
 [submodule "infra-deployer"]
 	path = infra-deployer
 	url = https://github.com/v-grand/infra-deployer
-[submodule "infra-template"]
-	path = infra-template
-	url = https://github.com/v-grand/infra-template.git
