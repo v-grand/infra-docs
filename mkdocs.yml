@@ -41,6 +41,7 @@ nav:
       - 'Tailscale': 'en/tailscale.md'
       - 'Secure Access':
         - 'AWS OIDC': 'en/secure-access/aws-oidc.md'
+        - 'AWS Static Keys': 'en/secure-access/aws-static-keys.md'
         - 'GCP WIF': 'en/secure-access/gcp-wif.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
@@ -53,7 +54,7 @@ nav:
     - 'Core Libraries':
       - 'Infra Core': 'ru/infra-core.md'
       - 'Infra Template': 'ru/infra-template.md'
-      - 'Template Frontend': 'en/template-frontend.md' # Needs translation
+      - 'Template Frontend': 'ru/template-frontend.md'
       - 'Template Platform': 'ru/template-platform.md'
       - 'Infra CI': 'ru/infra-ci.md'
     - 'Cloud Infrastructure':
@@ -65,7 +66,7 @@ nav:
         - 'K8s': 'ru/gcp/k8s.md'
       - 'Network': 'ru/infra-network.md'
     - 'Platform Services':
-      - 'Infra Deployer': 'en/infra-deployer.md' # Needs translation
+      - 'Infra Deployer': 'ru/infra-deployer.md'
       - 'Monitoring': 'ru/infra-monitoring.md'
       - 'Secrets Management': 'ru/infra-secrets.md'
       - 'Kubernetes': 'ru/infra-k8s.md'
@@ -88,7 +89,7 @@ nav:
     - 'Core Libraries':
       - 'Infra Core': 'pl/infra-core.md'
       - 'Infra Template': 'pl/infra-template.md'
-      - 'Template Frontend': 'en/template-frontend.md' # Needs translation
+      - 'Template Frontend': 'pl/template-frontend.md'
       - 'Template Platform': 'pl/template-platform.md'
       - 'Infra CI': 'pl/infra-ci.md'
     - 'Cloud Infrastructure':
@@ -100,7 +101,7 @@ nav:
         - 'K8s': 'pl/gcp/k8s.md'
       - 'Network': 'pl/infra-network.md'
     - 'Platform Services':
-      - 'Infra Deployer': 'en/infra-deployer.md' # Needs translation
+      - 'Infra Deployer': 'pl/infra-deployer.md'
       - 'Monitoring': 'pl/infra-monitoring.md'
       - 'Secrets Management': 'pl/infra-secrets.md'
       - 'Kubernetes': 'pl/infra-k8s.md'
@@ -110,6 +111,7 @@ nav:
       - 'Tailscale': 'pl/tailscale.md'
       - 'Bezpieczny dostęp':
         - 'AWS OIDC': 'pl/secure-access/aws-oidc.md'
+        - 'AWS Static Keys': 'pl/secure-access/aws-static-keys.md'
         - 'GCP WIF': 'pl/secure-access/gcp-wif.md'
     - 'Notebooks':
       - 'Example': 'notebooks/example.ipynb'
