@@ -16,6 +16,7 @@ The infrastructure ecosystem is built on a modular architecture where each repos
           ├─► infra-ci         (CI/CD Workflows)
           │
           └─► Application Repositories:
+              ├─► template-platform (This Project)
               ├─► infra-aws        (AWS Infrastructure)
               ├─► infra-gcp        (GCP Infrastructure)
               ├─► infra-network    (Network Configuration)
@@ -32,6 +33,7 @@ The infrastructure ecosystem is built on a modular architecture where each repos
 |:-----------|:--------|:-------|
 | **[infra-core](infra-core.md)** | Reusable Terraform modules (VM, VPC, DB, K8s, Tailscale) | ✅ Active |
 | **[infra-template](https://github.com/v-grand/infra-template)** | Standardized template for new infrastructure projects | ✅ Active |
+| **[template-platform](template-platform.md)** | A foundational backend service for new applications. | ✅ Active |
 | **[infra-ci](https://github.com/v-grand/infra-ci)** | Reusable GitHub Actions workflows for CI/CD | ✅ Active |
 | **[infra-docs](https://github.com/v-grand/infra-docs)** | Documentation website (this site) | ✅ Active |
 

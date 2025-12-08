@@ -16,6 +16,7 @@
           ├─► infra-ci         (CI/CD Workflows)
           │
           └─► Прикладные репозитории:
+              ├─► template-platform (Этот проект)
               ├─► infra-aws        (Инфраструктура AWS)
               ├─► infra-gcp        (Инфраструктура GCP)
               ├─► infra-network    (Сетевая конфигурация)
@@ -32,6 +33,7 @@
 |:------------|:-----------|:-------|
 | **[infra-core](infra-core.md)** | Переиспользуемые Terraform модули (VM, VPC, DB, K8s, Tailscale) | ✅ Активен |
 | **[infra-template](infra-template.md)** | Стандартизированный шаблон для новых проектов | ✅ Активен |
+| **[template-platform](template-platform.md)** | Фундаментальный бэкенд-сервис для новых приложений. | ✅ Активен |
 | **[infra-ci](infra-ci.md)** | Переиспользуемые GitHub Actions workflows для CI/CD | ✅ Активен |
 | **[infra-docs](https://github.com/v-grand/infra-docs)** | Сайт документации (этот сайт) | ✅ Активен |
 

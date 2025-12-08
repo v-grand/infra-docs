@@ -54,7 +54,7 @@ nav:
       - 'Infra Core': 'ru/infra-core.md'
       - 'Infra Template': 'ru/infra-template.md'
       - 'Template Frontend': 'en/template-frontend.md' # Needs translation
-      - 'Template Platform': 'en/template-platform.md' # Needs translation
+      - 'Template Platform': 'ru/template-platform.md'
       - 'Infra CI': 'ru/infra-ci.md'
     - 'Cloud Infrastructure':
       - 'AWS': 'ru/aws.md'
@@ -89,7 +89,7 @@ nav:
       - 'Infra Core': 'pl/infra-core.md'
       - 'Infra Template': 'pl/infra-template.md'
       - 'Template Frontend': 'en/template-frontend.md' # Needs translation
-      - 'Template Platform': 'en/template-platform.md' # Needs translation
+      - 'Template Platform': 'pl/template-platform.md'
       - 'Infra CI': 'pl/infra-ci.md'
     - 'Cloud Infrastructure':
       - 'AWS': 'pl/aws.md'

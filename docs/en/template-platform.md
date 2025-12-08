@@ -1,60 +1,32 @@
-# Microservice Platform Template
+# Template Platform
 
-This repository serves as a template for creating a microservice-based platform. It includes everything needed for local development, testing, CI/CD, and deployment.
+**Template Platform** is a foundational backend service designed to provide a ready-to-use, scalable, and maintainable starting point for new applications. It integrates seamlessly with the infrastructure components provided by `infra-core` and `infra-template`, and its deployment is managed by pipelines from `infra-ci`.
+
+## Core Purpose
+
+The primary goal of `template-platform` is to accelerate development by offering a pre-configured environment that includes:
+
+- **API Scaffolding**: A basic structure for creating RESTful or GraphQL APIs.
+- **Database Integration**: Pre-configured connections to standard databases.
+- **CI/CD Integration**: Ready to be deployed to `dev` and `stage` environments out-of-the-box using `infra-ci`.
+- **Observability**: Hooks for logging, metrics, and tracing.
 
 ## Getting Started
 
-### Prerequisites
-
-- Docker
-- Docker Compose
-- Git
-
-### Installation
-
-1.  **Clone the repository:**
-
-    ```bash
-    git clone --recurse-submodules https://github.com/your-username/platform-template.git
-    cd platform-template
-    ```
-
-2.  **Configure environment variables:**
-
-    Copy `.env.example` to `.env` and modify the values if necessary.
-
-    ```bash
-    cp .env.example .env
-    ```
-
-3.  **Start the services:**
-
-    ```bash
-    make up
-    ```
-
-    This will start all services in the background.
-
-## Testing
-
-To run the tests, execute:
+To begin working with `template-platform`, ensure you have cloned the repository and initialized its submodules:
 
 ```bash
-make test
+git clone <your-repo-url>/template-platform.git
+cd template-platform
+git submodule update --init --recursive
 ```
 
-## CI/CD
+The service can be run locally using Docker Compose:
 
-The CI pipeline is configured using GitHub Actions. It automatically runs on every push to the `main` branch or when a pull request is created.
+```bash
+docker-compose up --build
+```
 
 ## Deployment
 
-Kubernetes manifests for deployment are located in the `k8s` directory.
-
-## Submodules
-
-This repository uses submodules to manage microservices. To update all submodules to the latest commits, use:
-
-```bash
-git submodule update --remote --merge
-```
+Deployments are handled automatically by GitHub Actions upon pushing to the `main` branch (for the `dev` environment) or can be triggered manually (for the `stage` environment). The pipeline uses Terraform configurations defined within the `template-platform` repository, which in turn utilize modules from `infra-template`.
